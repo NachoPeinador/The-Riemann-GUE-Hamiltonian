@@ -119,7 +119,7 @@ To guarantee the transparency and robustness of the results submitted to *Physic
 
 You can regenerate the Hamiltonian, diagonalize it, and extract both the $R^2$ metrics and the Spectral Form Factor dynamically in your browser.
 
-*Click to open the experiment in Google Colab. Due to the $O(N^3)$ complexity of exact diagonalization, execution for $N=20,000$ takes ~45 minutes on a standard cloud GPU.*
+Click to open the experiment in Google Colab. Due to the $O(N^3)$ complexity of exact diagonalization, execution for $N=20,000$ takes ~45 minutes on a standard cloud GPU.
 
 ### Local Installation
 
@@ -129,7 +129,7 @@ You can regenerate the Hamiltonian, diagonalize it, and extract both the $R^2$ m
 **1. Clone the Repository**
 
 ```bash
-git clone https://github.com/TuUsuario/TuRepo.git
+git clone https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum.git
 cd TuRepo
 
 ```
