@@ -113,7 +113,7 @@ The computational laboratory contained in this repository executes the largest k
 
 ## 🚀 Reproducibility and Computational Lab
 
-To guarantee the transparency and robustness of the results submitted to *Physical Review Letters*, the entire physical engine is open-source.
+To guarantee the transparency and robustness of the results, the entire physical engine is open-source.
 
 ### Cloud Execution (Recommended)
 
