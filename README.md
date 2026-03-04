@@ -222,10 +222,6 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
 
 ---
 
-<div align="center">
-
----
-
 ## 🔭 Philosophical Context
 
 > *"In the beginner's mind there are many possibilities, but in the expert's there are few."* — **Shunryu Suzuki**
@@ -237,6 +233,8 @@ By recognizing the $\mathbb{Z}/6\mathbb{Z}$ ring not merely as an algorithmic tr
 This project was developed outside the traditional academic ecosystem. It serves as a reminder that the frontiers of theoretical physics and pure mathematics are open to anyone armed with extreme curiosity, rigorous computational methodology, and the courage to look at ancient problems through an unconditioned lens.
 
 ---
+
+<div align="center">
 
 <b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
 
