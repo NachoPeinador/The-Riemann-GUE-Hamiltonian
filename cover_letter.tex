@@ -20,8 +20,8 @@
 % Configuración de hipervínculos
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue
+    linkcolor=blue!70!black,
+    urlcolor=blue!70!black
 }
 
 \begin{document}
@@ -60,12 +60,12 @@ The central contribution of this Letter is twofold, offering both a static struc
 
 \begin{enumerate}
     \item \textbf{Autonomous Spectral Reconstruction:} By pushing exact diagonalization to the massive regime ($N=20,000$), the Hamiltonian reproduces the exact macroscopic Weyl trajectory of the Riemann zeros with a determination coefficient of \textbf{$R^2 = 0.999997$}, without a single affine scaling factor.
-    \item \textbf{Arithmetic Quantum Chaos (The SFF Anomaly):} Beyond local Wigner-Dyson level repulsion, we present the first evaluation of the \textbf{Spectral Form Factor (SFF)} for an arithmetic prime-sieve operator. Crucially, the SFF reveals an anomalous sub-diffusive fractional ramp ($\gamma \approx 0.60$) that saturates perfectly at the Heisenberg time. This proves that the system resides in a \textbf{Non-Ergodic Extended (NEE) phase} governed by the Altshuler-Shklovskii effect.
+    \item \textbf{Arithmetic Quantum Chaos (The SFF Anomaly):} Beyond local Wigner-Dyson level repulsion, we present the first evaluation of the \textbf{Spectral Form Factor (SFF)} for an arithmetic prime-sieve operator. Crucially, the SFF reveals an anomalous sub-diffusive fractional ramp ($\gamma \approx 0.60$) that saturates perfectly at the Heisenberg time ($t_H = 2\pi$). This dynamical signature proves that the system resides in a \textbf{Non-Ergodic Extended (NEE) phase} governed by the Altshuler-Shklovskii effect.
 \end{enumerate}
 
 \section*{Physical Justification: A Zero-Parameter Engine}
 
-A key distinction of this Hamiltonian is that it contains \textbf{no free parameters}. Every constant is derived from necessary geometric or thermodynamic conditions of the quantum vacuum:
+A key distinction of this Hamiltonian is that it contains \textbf{no free parameters}. Every constant is derived from necessary geometric or thermodynamic conditions of the quantum vacuum, shielding the model against "curve-fitting" criticisms:
 
 \vspace{0.3cm}
 \begin{center}
@@ -87,11 +87,13 @@ A key distinction of this Hamiltonian is that it contains \textbf{no free parame
 \end{center}
 \vspace{0.3cm}
 
-\section*{Broader Impact}
+\section*{Broader Impact and Reproducibility}
 
 We believe this Letter perfectly aligns with the broad-interest mandate of PRL. The derived thermodynamic resonance ($\epsilon_c = \pi\sqrt{2}$) and the multifractal SFF signature provide a rigorous, striking parallel to the bounds of maximal quantum chaos observed in strongly correlated many-body physics, such as the Sachdev-Ye-Kitaev (SYK) model and Euclidean wormholes in Jackiw-Teitelboim (JT) supergravity. 
 
 By establishing this explicit bridge between analytic number theory, Power-Law Random Banded Matrices, and holographic chaos, this work opens a new interdisciplinary avenue for understanding the arithmetic structure of the physical vacuum.
+
+To ensure absolute transparency and reproducibility, the complete computational framework (the Python exact diagonalization engine) and the empirical datasets are publicly available at \url{https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum}.
 
 Thank you for your time and consideration.
 
