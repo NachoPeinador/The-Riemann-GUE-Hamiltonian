@@ -232,6 +232,8 @@ By recognizing the $\mathbb{Z}/6\mathbb{Z}$ ring not merely as an algorithmic tr
 
 This project was developed outside the traditional academic ecosystem. It serves as a reminder that the frontiers of theoretical physics and pure mathematics are open to anyone armed with extreme curiosity, rigorous computational methodology, and the courage to look at ancient problems through an unconditioned lens.
 
+> *"A wizard is never late, nor is he early, he arrives precisely when he means to."* — **Gandalf the Grey**
+
 ---
 
 <div align="center">
