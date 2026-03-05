@@ -2,6 +2,12 @@
 
 ### Explicit Hermitian Operator for the Hilbert-Pólya Conjecture via $\mathbb{Z}/6\mathbb{Z}$
 
+[![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README_es.md)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452) [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Papers/Z6Z_EHH_paper.pdf)
+
 ---
 
 ## 🎯 TL;DR - The Essentials
@@ -119,7 +125,7 @@ To guarantee the transparency and robustness of the results, the entire physical
 
 You can regenerate the Hamiltonian, diagonalize it, and extract both the $R^2$ metrics and the Spectral Form Factor dynamically in your browser.
 
-Click to open the experiment in Google Colab. Due to the $O(N^3)$ complexity of exact diagonalization, execution for $N=20,000$ takes ~45 minutes on a standard cloud GPU.
+Click to open the experiment in Google Colab. Due to the $O(N^3)$ complexity of exact diagonalization, execution for $N=20,000$ takes ~45 minutes on a standard cloud GPU. [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
 
 ### Local Installation
 
@@ -176,14 +182,14 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
   year = {2026},
   publisher = {Zenodo},
   doi = {10.5281/zenodo.xxxxxxx},
-  url = {https://github.com/TuUsuario/TuRepo}
+  url = {https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum}
 }
 
 ```
 
 **APA:**
 
-> Peinador Sala, J. I. (2026). *Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z*. GitHub/Zenodo. [](https://www.google.com/search?q=%23)
+> Peinador Sala, J. I. (2026). *Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z*.https://doi.org/10.5281/zenodo.18703611
 
 </details>
 
@@ -197,8 +203,8 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
 ```text
 .
 ├── 📂 Papers/                           # Academic & Theoretical Documentation
-│   ├── 📄 PRL_Draft_Hamiltonian.pdf     # The Submitted Manuscript
-│   └── 📝 PRL_Draft_Hamiltonian.tex     # LaTeX source code
+│   ├── 📄 Z6Z_EHH_paper.pdf     # The Submitted Manuscript
+│   └── 📝 Z6Z_EHH_paper.tex     # LaTeX source code
 │
 ├── 📂 Notebooks/                        # Computational Lab
 │   ├── 📓 Riemann_GUE_Hamiltonian.ipynb # The Physics Engine:
