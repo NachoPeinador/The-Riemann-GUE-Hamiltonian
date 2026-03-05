@@ -127,6 +127,8 @@ You can regenerate the Hamiltonian, diagonalize it, and extract both the $R^2$ m
 
 Click to open the experiment in Google Colab. Due to the $O(N^3)$ complexity of exact diagonalization, execution for $N=20,000$ takes ~45 minutes on a standard cloud GPU. ![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)(https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
 
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]](https://colab.research.google.com/github/NachoPeinador/Modular-Substrate-Theory/blob/main/Notebooks/MST_Cosmology.ipynb)
+
 ### Local Installation
 
 <details>
