@@ -1,4 +1,3 @@
-```latex
 \documentclass[12pt,a4paper]{article}
 
 % ==============================================================================
@@ -360,3 +359,4 @@ Todos los cálculos se realizaron en Google Colab con Python 3.10, utilizando la
 
 \end{document}
 ```
+
