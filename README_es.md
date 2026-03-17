@@ -188,13 +188,21 @@ jupyter notebook Notebooks/Riemann_GUE_Hamiltonian.ipynb
 
 \</details\>
 
------
+---
 
-## ⚖️ Licencia
+## ⚖️ Licencias
 
-Este repositorio (código y documentación) se publica bajo la **Licencia MIT**, fomentando la replicación académica total, la modificación y la integración en investigaciones posteriores de física teórica o teoría de números.
+Este repositorio opera bajo un modelo de **Licencia Dual** para proteger la naturaleza no comercial de la investigación y, al mismo tiempo, fomentar la colaboración académica abierta:
 
------
+1. **Código y Software (`Notebooks/` y scripts):**
+   Publicado bajo la [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0). 
+   *Eres libre de usar, modificar y compartir el código para fines académicos, personales o educativos. Queda estrictamente prohibido cualquier uso comercial, monetización o integración en software propietario de pago.*
+
+2. **Manuscrito y Recursos Visuales (`Papers/` e `Images/`):**
+   Publicado bajo la licencia [Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es).
+   *Eres libre de compartir y adaptar el texto teórico y los gráficos con fines no comerciales, siempre y cuando des el crédito adecuado y distribuyas tus contribuciones bajo esta misma licencia.*
+
+---
 
 ## 📝 Citación
 
@@ -230,27 +238,24 @@ Si esta construcción del Hamiltoniano, las derivaciones analíticas ($\epsilon 
 \<summary\>\<strong\>👇 Haz clic para ver la estructura del repositorio\</strong\>\</summary\>
 
 ```text
-.
-├── 📂 Papers/                 # Documentación académica y teórica
-│   ├── 📄 Z6Z_EHH_paper.pdf    # El manuscrito enviado
-│   └── 📝 Z6Z_EHH_paper.tex    # Código fuente LaTeX
+├── 📂 Papers/                             # Documentación Académica y Teórica
+│   ├── 📄 Z6Z_EHH_paper.pdf                # Manuscrito enviado para publicación
+│   └── 📝 Z6Z_EHH_paper.tex                # Código fuente en LaTeX
 │
-├── 📂 Notebooks/              # Laboratorio computacional
-│   ├── 📓 Riemann_GUE_Hamiltonian.ipynb  # El motor físico:
-│   │   ├── Fase I: Topo‑Inversión (Lambert W)
-│   │   ├── Fase II: Generación del tamiz aritmético
-│   │   ├── Fase III: Diagonalización exacta
-│   │   ├── Fase IV: Métricas macroscópicas y microscópicas
-│   │   ├── Fase V: Análisis del Factor de Forma Espectral (SFF)
-│   │   └── Fase VI: Promedio de ensamble y validación NEE
-│   │
-│   └── 💾 zetazeros.txt        # Conjunto de datos LMFDB (Primeros 100k ceros)
+├── 📂 Notebooks/                          # Laboratorio Computacional
+│   ├── 📓 1_Riemann_GUE_Hamiltonian.ipynb    # Motor Físico Principal y Diag. Exacta
+│   ├── 📓 2_Z6Z_SFF_FRACTAL.ipynb            # Ensamble SFF y Dimensión D2
+│   ├── 📓 3_Complementary_Experiments.ipynb  # Fourier, Simetría Quiral y FSS
+│   └── 💾 zetazeros.txt                     # Conjunto de datos LMFDB (Primeros 100k ceros)
 │
-├── 📂 Images/                 # Visualizaciones en alta resolución
-│   ├── 📊 PRL_Figure_Ultimate_10k.png     # Reconstrucción y Wigner‑Dyson
-│   └── 📉 PRL_Figure_Final_con_inset.png  # Firma SFF multifractal con Inset
+├── 📂 Images/                             # Visualizaciones de Alta Resolución
+│   ├── 📊 PRL_Figure_Ultimate_10k.png       # Reconstrucción y Wigner‑Dyson
+│   ├── 📉 PRL_Figure_Final_con_inset.png    # Firma del SFF Multifractal
+│   ├── 📈 Fourier_Z6Z_Analysis.png          # Descubrimiento de la Resonancia de 4π
+│   ├── 🔮 Chiral_Symmetry_Breaking.png      # Transición de AIII a Clase A
+│   └── 📐 Finite_Size_Scaling_Complete.png   # Colapso Termodinámico FSS
 │
-└── 📜 LICENSE                 # Licencia MIT
+└── 📜 LICENSE                             # Licencia Dual (PolyForm / CC BY-NC-SA)
 ```
 
 \</details\>
