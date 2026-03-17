@@ -97,18 +97,18 @@ El sistema no está ni completamente termalizado ni localizado. Reside en la **f
 
 ## 📊 Validación Experimental ($N=20,000$, $M=100$)
 
-El laboratorio computacional contenido en este repositorio ejecuta la diagonalización exacta más grande conocida de un Hamiltoniano con estructura aritmética, utilizando rutinas optimizadas de `scipy.linalg.eigh` en precisión simple (`complex64`) para gestionar matrices densas de hasta 12 GB de RAM. El promedio de ensamble sobre $M=100$ realizaciones independientes con $N=15,000$ arroja las siguientes métricas definitivas:
+El laboratorio computacional contenido en este repositorio ejecuta la diagonalización exacta más grande conocida de un Hamiltoniano con estructura aritmética, utilizando rutinas optimizadas de `scipy.linalg.eigh` (CPU) y aceleración tensorial con `CuPy` (GPU). La validación abarca desde matrices densas que requieren 12 GB de RAM ($N=20,000$) hasta promedios de ensamble termodinámico masivos ($M=100$ realizaciones independientes). La suite arroja las siguientes métricas definitivas:
 
 | Métrica | Valor | Interpretación Teórica |
 | :--- | :--- | :--- |
 | **Identidad Macroscópica ($R^2$)** | **$0.999997$** | Seguimiento perfecto de la trayectoria de Weyl sin factores de escala empíricos. |
-| **Factor de Escala Macroscópico** | **$0.9994$** | Convergencia autónoma a la unidad ($\Delta < 0.06\%$). |
 | **Caos Microscópico** | **Wigner‑Dyson** | Ruptura total de la integrabilidad de Poisson; fuerte repulsión de niveles $P(0)\to0$. |
-| **Dimensión Fractal $D_2$** | **$0.24338 \pm 0.00006$** | Dimensión estrictamente reducida que prueba el soporte multifractal (Shapiro‑Wilk $p=0.796$). |
-| **Exponente de Rampa SFF $\gamma$** | **$0.6086 \pm 0.0103$** | Difusión fraccionaria subdifusiva inducida por la máscara $\mathbb{Z}/6\mathbb{Z}$; IC 95% bootstrap $[0.5835, 0.6328]$. |
-| **Anomalía $\eta = \gamma - D_2$** | **$0.3652 \pm 0.0103$** | Anomalía de retrodispersión cuántica anclada al invariante de $\mathbb{Z}/6\mathbb{Z}$. |
-| **Saturación de Meseta SFF** | **$K \approx 0.9989$ en $t_H = 2\pi$** | Prueba absoluta de la discreción del espectro y hermiticidad rigurosa (sin fugas de Poisson). |
-| **Exponente de Decaimiento Espacial** | **$\nu = 0.75$** | Derivado matemáticamente del teorema de Kato‑Rellich; observado experimentalmente en monocapas de Sn/Si (Geoffroy et al., 2025). |
+| **Rotura de Simetría Quiral** | **Clase AIII $\to$ Clase A** | El potencial de Lambert $W$ destruye macroscópicamente la simetría de espejo bipartita, empujando el sistema a la clase de universalidad GUE. |
+| **Período de Modulación Fourier** | **$\approx 12.57$ ($4\pi$)** | Rechazo de una onda sinusoidal trivial de período 6; revela la verdadera escala de resonancia multifractal del vacío aritmético. |
+| **Dimensión Fractal $D_2$** | **$0.2433 \pm 0.0006$** | Dimensión estrictamente reducida que prueba un soporte multifractal disperso (Shapiro‑Wilk $p=0.796$). |
+| **Exponente de Rampa SFF $\gamma$** | **$0.6148 \pm 0.0101$** | Difusión fraccionaria subdifusiva inducida por la máscara $\mathbb{Z}/6\mathbb{Z}$ (Efecto Altshuler-Shklovskii). |
+| **Resiliencia Termodinámica** | **Colapso de Escalamiento FSS** | El colapso perfecto de datos a través de múltiples tamaños de matriz demuestra la estricta invarianza termodinámica de la fase NEE. |
+| **Saturación de Meseta SFF** | **$K \approx 1.0$ en $t_H = 2\pi$** | Prueba dinámica absoluta de la discreción del espectro y hermiticidad rigurosa (sin fugas de Poisson). |
 
 -----
 
