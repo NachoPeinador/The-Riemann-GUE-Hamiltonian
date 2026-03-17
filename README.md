@@ -238,4 +238,3 @@ This project was developed outside the traditional academic ecosystem. It serves
 <b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
 
 </div>
-```
