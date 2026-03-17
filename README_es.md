@@ -231,12 +231,10 @@ Este proyecto fue desarrollado fuera del ecosistema académico tradicional. Sirv
 
 > *“Un mago nunca llega tarde, ni pronto, llega exactamente cuando se lo propone.”* — **Gandalf el Gris**
 
------
+---
 
-\<div align="center"\>
+<div align="center">
 
-\<b\>Última actualización:\</b\> Marzo 2026 | \<b\>Estado:\</b\> Listo para Revisión por Pares | Construido con ⚛️ & 🐍
+<b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
 
-\</div\>
-
------
+</div>
