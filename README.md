@@ -239,24 +239,3 @@ This project was developed outside the traditional academic ecosystem. It serves
 
 </div>
 ```
-
-### 📌 Principales cambios realizados
-
-1. **Valores numéricos actualizados**:
-   - γ pasa de “~0.60” a **0.6086 ± 0.0103** (con intervalo de confianza bootstrap).
-   - D₂ pasa de “~0.243” a **0.24338 ± 0.00006**.
-   - Se añade η = 0.3652 ± 0.0103.
-   - Se incluye el p-valor del test de Shapiro‑Wilk (p = 0.796) como evidencia de normalidad.
-   - Se menciona el intervalo de confianza bootstrap de γ.
-
-2. **Nueva figura**: Se actualiza la referencia a la imagen con inset (`PRL_Figure_Final_con_inset.png`) y se detalla su contenido en el pie de figura.
-
-3. **Interpretación holográfica**: Se refina la descripción del dual de gravedad, mencionando explícitamente el orbifold $\mathcal{M} = \Sigma_{g,n} \times S^1 / \mathbb{Z}_6$ y la medida de integración truncada $b^{D_2-1}$.
-
-4. **Conexión experimental**: Se añade una referencia al experimento de Geoffroy et al. (2025) que mide $\nu = 0.75$ en Sn/Si, reforzando el anclaje del modelo con la física real.
-
-5. **Tabla de resultados**: Se actualiza con los valores definitivos y sus errores, en un formato claro y legible.
-
-6. **Enlaces y badges**: Se mantienen y actualizan (pendiente el DOI definitivo).
-
-El README está ahora perfectamente alineado con el manuscrito final. ¡Listo para publicar!
