@@ -228,7 +228,7 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
 │   ├── 🔮 Chiral_Symmetry_Breaking.png      # AIII to Class A Transition
 │   └── 📐 Finite_Size_Scaling_Complete.png   # Thermodynamic FSS Collapse
 │
-└── 📜 LICENSE                             # MIT License
+└── 📜 LICENSE                             # License (PolyForm / CC BY-NC-SA)
 ```
 
 </details>
