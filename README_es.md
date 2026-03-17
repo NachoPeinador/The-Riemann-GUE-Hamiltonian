@@ -11,20 +11,21 @@
 
 -----
 
-## 🎯 Resumen Ejecutivo
+## 🎯 Resumen Ejecutivo (TL;DR)
 
 ### 🔬 **Hitos Teóricos**
 
-  * ⚛️ **Hilbert-Pólya Realizado:** Primer Hamiltoniano ($\hat{H}_{\text{RGUE}}$) explícito, manifiestamente hermítico y **libre de parámetros**, cuyos autovalores coinciden con los ceros no triviales de Riemann.
-  * 📐 **Inversión de Weyl Exacta:** Potencial diagonal gobernado por la función $W$ de Lambert con el desplazamiento de fase topológico de Maslov de $7/8$, eliminando los errores de truncamiento asintótico.
-  * 🧩 **Tamiz Topológico:** Ruido cuántico extradiagonal filtrado por el vacío aritmético $\mathbb{Z}/6\mathbb{Z}$, originado a partir de la restricción de dimensión KO igual a 6 de Connes en Geometría No Conmutativa.
-  * ⚖️ **Resonancia Termodinámica:** Acoplamiento de caos crítico derivado analíticamente como $\epsilon = \pi\sqrt{2}$, fijando la transición al Ensamble Unitario Gaussiano (GUE).
+* ⚛️ **Hilbert-Pólya Realizado:** Primer Hamiltoniano ($\hat{H}_{\text{RGUE}}$) explícito, manifiestamente hermítico y **libre de parámetros**, cuyos autovalores coinciden con los ceros no triviales de Riemann.
+* 📐 **Inversión de Weyl Exacta:** Potencial diagonal gobernado por la función $W$ de Lambert con el desplazamiento de fase topológico de Maslov de $7/8$, eliminando los errores de truncamiento asintótico.
+* 🧩 **Tamiz Topológico:** Ruido cuántico extradiagonal filtrado por el vacío aritmético $\mathbb{Z}/6\mathbb{Z}$, originado a partir de la restricción de dimensión KO igual a 6 de Connes en Geometría No Conmutativa.
+* ⚖️ **Resonancia Termodinámica:** Acoplamiento de caos crítico derivado analíticamente como $\epsilon = \pi\sqrt{2}$, fijando la transición al Ensamble Unitario Gaussiano (GUE).
 
 ### ⚡ **Validación Computacional y Física ($N=20,000$, $M=100$)**
 
-  * 📈 **Identidad Macroscópica:** Reconstrucción con $R^2 = 0.999997$ de los primeros 10,000 ceros de Riemann sin ningún escalamiento empírico.
-  * 🎲 **Ergodicidad Microscópica:** Acuerdo perfecto con la repulsión de niveles de Wigner‑Dyson del GUE.
-  * 🌀 **Multifractalidad Dinámica:** El Factor de Forma Espectral (SFF) exhibe una rampa fraccionaria estable $\gamma = 0.6086 \pm 0.0103$, demostrando que el sistema reside en una **fase No Ergódica Extendida (NEE)** con dimensión fractal $D_2 = 0.24338 \pm 0.00006$.
+* 📈 **Identidad Macroscópica:** Reconstrucción con $R^2 = 0.999997$ de los primeros 10,000 ceros de Riemann sin ningún escalamiento empírico.
+* 🎲 **Ergodicidad Microscópica:** Acuerdo perfecto con la repulsión de niveles de Wigner‑Dyson del GUE.
+* 🌊 **Fourier y Rotura de Simetría:** Descubrimiento de un período de modulación de $4\pi \approx 12.57$ en las fluctuaciones de los ceros y demostración de la rotura macroscópica de la simetría quiral AIII.
+* 🌀 **Multifractalidad Dinámica:** El Factor de Forma Espectral (SFF) exhibe una rampa fraccionaria estable $\gamma = 0.6148 \pm 0.0101$, demostrando que el sistema reside en una **fase No Ergódica Extendida (NEE)** con dimensión fractal $D_2 = 0.2433 \pm 0.0006$.
 
 ### 💡 **Concepto Clave**
 
@@ -38,23 +39,25 @@ La **Conjetura de Hilbert‑Pólya** postula que los ceros no triviales de la fu
 
 Modelos fenomenológicos previos, como el enfoque semiclásico de Berry‑Keating ($\hat{H} = xp$) o el modelo pseudo-hermítico de Bender‑Brody‑Müller (BBM), o bien carecían de una cuantización exacta rigurosa o dependían de métricas con simetría $\mathcal{PT}$ vulnerables a la ruptura espontánea de la simetría.
 
-Esta investigación presenta la construcción definitiva de **$\hat{H}_{\text{RGUE}}$**, un operador de red cuántica discreta construido íntegramente a partir de primeros principios. Al aprovechar las restricciones algebraicas de la Geometría No Conmutativa (específicamente, el espacio interno de dimensión KO igual a 6 del Modelo Estándar), el Hamiltoniano actúa como un tamiz aritmético.
+Esta investigación presenta la construcción definitiva de **$\hat{H}_{\text{RGUE}}$**, un operador de red cuántica discreta construido íntegramente a partir de primeros principios. Al aprovechar las restricciones algebraicas de la Geometría No Conmutativa (específicamente, el espacio interno de dimensión KO igual a 6 del Modelo Estándar), el Hamiltoniano actúa como un tamiz aritmético exacto.
 
 ### 🚀 El Motor "Libre de Parámetros"
 
-A diferencia de intentos anteriores que dependen del ajuste de datos, cada componente de $\hat{H}_{\text{RGUE}}$ está bloqueado analíticamente:
+A diferencia de intentos anteriores que dependen del ajuste de datos empíricos, cada componente de $\hat{H}_{\text{RGUE}}$ está bloqueado analíticamente a un invariante topológico:
 
-1.  **Diagonal ($\hat{H}_0$):** $E_n = 2\pi (n - 7/8) / W((n - 7/8)/e)$.
-2.  **Decaimiento Cinético:** $\nu = 0.75$ (Centro de la fase caótica de matrices bandeadas aleatorias de ley de potencia, garantizando el carácter esencialmente autoadjunto de Kato‑Rellich).
-3.  **Topología de Interacción:** $\Xi(d) \in \{1, 5\} \pmod 6$ (Reglas de superselección de primos).
+1. **Potencial Diagonal ($\hat{H}_0$):** $E_n = 2\pi (n - 7/8) / W((n - 7/8)/e)$.
+2. **Decaimiento Cinético:** $\nu = 0.75$ (Centro de la fase caótica de matrices bandeadas aleatorias de ley de potencia, garantizando el carácter esencialmente autoadjunto de Kato‑Rellich).
+3. **Topología de Interacción:** $\Xi(d) \in \{1, 5\} \pmod 6$ (Reglas de superselección de primos).
 
-\<p align="center"\>
-\<img src="Images/PRL\_Figure\_Ultimate\_10k.png" alt="Reconstrucción Espectral y Caos Cuántico" width="100%"\>
-<br>
-\<em\>Figura 1. Convergencia macroscópica (Izquierda/Centro) y repulsión de niveles microscópica de Wigner‑Dyson (Derecha) logradas de forma autónoma por el Hamiltoniano.\</em\>
-\</p\>
+*Juntos, estos tres pilares rígidos garantizan la estabilidad termodinámica global y generan estadísticas universales de Wigner-Dyson sin un solo factor de escala empírico.*
 
------
+<p align="center">
+  <img src="Images/PRL_Figure_Ultimate_10k.png" alt="Reconstrucción Espectral y Caos Cuántico" width="100%">
+  <br>
+  <em>Figura 1. Convergencia macroscópica (Izquierda/Centro) y repulsión de niveles microscópica de Wigner‑Dyson (Derecha) logradas de forma autónoma por el Hamiltoniano.</em>
+</p>
+
+---
 
 ## 🧭 Marco Conceptual
 
@@ -78,22 +81,28 @@ graph TD
     style S fill:#ff9,stroke:#333,stroke-width:2px
 ```
 
-### 2\. Holografía y el Factor de Forma Espectral (SFF)
+### 2. Holografía y el Factor de Forma Espectral (SFF)
 
 La prueba definitiva del caos cuántico en la física teórica moderna es la evolución dinámica del **Factor de Forma Espectral (SFF)**.
 
-Mientras que las matrices densas estándar exhiben una rampa lineal rígida ($\gamma = 1.0$) en escala log‑log, nuestra diagonalización exacta de $\hat{H}_{\text{RGUE}}$ revela una **rampa fraccionaria anómala ($\gamma = 0.6086 \pm 0.0103$)**, que se satura perfectamente en el tiempo de Heisenberg teórico $t_H = 2\pi$.
+Mientras que las matrices densas estándar exhiben una rampa lineal rígida ($\gamma = 1.0$) en escala log‑log, nuestra diagonalización exacta de $\hat{H}_{\text{RGUE}}$ revela una **rampa fraccionaria anómala ($\gamma = 0.6148 \pm 0.0101$)**, que se satura perfectamente en el tiempo de Heisenberg teórico $t_H = 2\pi$.
 
-\<p align="center"\>
-\<img src="Images/PRL\_Figure\_Final\_con\_inset.png" alt="Factor de Forma Espectral con Inset" width="80%"\>
-<br>
-\<em\>Figura 2. La firma "Bache, Rampa y Meseta". El recuadro amplía la región de la rampa, comparando la pendiente medida (γ = 0.6086, rojo) con la predicción ergódica (γ = 1.0, negro discontinuo). La saturación perfecta en t\_H demuestra una hermiticidad estricta.\</em\>
-\</p\>
+<p align="center">
+  <img src="Images/PRL_Figure_Final_con_inset.png" alt="Factor de Forma Espectral con Inset" width="80%">
+  <br>
+  <em>Figura 2. La firma "Bache, Rampa y Meseta". El recuadro amplía la región de la rampa, comparando la pendiente medida (γ = 0.6148, rojo) con la predicción ergódica (γ = 1.0, negro discontinuo). La saturación perfecta en t_H demuestra una hermiticidad estricta.</em>
+</p>
 
 **Interpretación Física:**
-El sistema no está ni completamente termalizado ni localizado. Reside en la **fase No Ergódica Extendida (NEE)** con dimensión fractal $D_2 \approx 0.243$. El tamiz aritmético de $\mathbb{Z}/6\mathbb{Z}$ ralea drásticamente el paseo aleatorio cuántico, actuando como un análogo estructural a un agujero de gusano de Keldysh euclídeo en una geometría de orbifold $\mathcal{M} = \Sigma_{g,n} \times S^1 / \mathbb{Z}_6$, donde la medida de integración de Weil‑Petersson está truncada por $b^{D_2-1}$.
+El sistema no está ni completamente termalizado ni localizado. Reside en la **fase No Ergódica Extendida (NEE)** con dimensión fractal $D_2 \approx 0.2433$. El tamiz aritmético de $\mathbb{Z}/6\mathbb{Z}$ ralea drásticamente el paseo aleatorio cuántico, actuando como un análogo estructural a un agujero de gusano de Keldysh euclídeo en una geometría de orbifold $\mathcal{M} = \Sigma_{g,n} \times S^1 / \mathbb{Z}_6$, donde la medida de integración de Weil‑Petersson está truncada por $b^{D_2-1}$.
 
------
+### 3. Rotura de Simetría Quiral y Resonancia de $4\pi$
+
+El Hamiltoniano evita explícitamente las trampas integrables triviales de las redes bipartitas estándar. La naturaleza monótona no acotada del potencial de Lambert $W$ rompe estrictamente la simetría de espejo quiral AIII de la máscara extradiagonal $\mathbb{Z}/6\mathbb{Z}$, forzando al sistema a entrar en la clase de universalidad **Clase A (GUE)**.
+
+Además, el análisis de Fourier de las fluctuaciones espectrales revela que la máscara modular no se manifiesta como una simple onda sinusoidal de período 6, sino que induce un período de modulación multifractal macroscópico de **$\approx 12.57$ ($4\pi$)**, que coincide perfectamente con los límites teóricos de saturación de los modelos de gravedad cuántica.
+
+---
 
 ## 📊 Validación Experimental ($N=20,000$, $M=100$)
 
