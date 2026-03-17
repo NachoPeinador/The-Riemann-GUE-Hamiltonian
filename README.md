@@ -118,9 +118,38 @@ To guarantee transparency and robustness, the entire physical engine is open‑s
 
 ### Cloud Execution (Recommended)
 
-You can regenerate the Hamiltonian, diagonalize it, and extract both the $R^2$ metrics and the Spectral Form Factor dynamically in your browser. Click the badge below to open the experiment in Google Colab (estimated runtime for $N=20,000$ is ~45 minutes on a standard cloud GPU).
+You can regenerate the Hamiltonian, evaluate the thermodynamic ensembles, and extract the spectral metrics dynamically in your browser. Click the badges below to open the respective experiments in Google Colab. 
+
+*(Note: Notebook 1 executes dense matrix algebra requiring a standard High-RAM CPU environment, while Notebooks 2 and 3 leverage CuPy and require a T4 GPU accelerator).*
+
+### 1. The Physics Engine: Exact Diagonalization & Quantum Chaos
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
+
+This notebook acts as the core computational laboratory. It pushes standard cloud environments to their limits by performing a direct, dense exact diagonalization of the $20,000 \times 20,000$ $\hat{H}_{\text{RGUE}}$ operator. It executes the primary physical validations:
+* **The Parameter-Free Operator:** Implements the deterministic Lambert $W$ diagonal potential (with the $7/8$ Maslov phase) and filters GUE noise exclusively through the $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve.
+* **Macroscopic Topological Identity:** Achieves an autonomous $R^2 = 0.999997$ spectral reconstruction of the first 10,000 Riemann zeros, proving the complete elimination of asymptotic truncation errors.
+* **Microscopic Universality:** Extracts the unfolded nearest-neighbor level spacing distribution, confirming the strict emergence of Wigner-Dyson level repulsion (Class A chaos).
+* **Dynamical Ergodicity Onset:** Computes the raw Spectral Form Factor (SFF) to visualize the canonical "Dip, Ramp, and Plateau" signature of quantum chaos and its saturation at the Heisenberg time.
+
+### 2. Dynamical Ergodicity & Multifractal NEE Phase
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Z6Z_SFF_FRACTAL.ipynb)
+
+This notebook leverages GPU acceleration (CuPy) to perform a massive Quantum Monte Carlo ensemble average ($M=100$ realizations of $N=15,000$ matrices). It diagnoses the global long-range dynamics and spatial geometry of the Riemann-GUE Hamiltonian by executing the following measurements:
+* **Ensemble-Averaged SFF:** Purifies the Spectral Form Factor to eliminate mesoscopic noise, unveiling the highly stable sub-diffusive fractional ramp ($\gamma = 0.6148 \pm 0.0101$) that defines the arithmetic vacuum.
+* **Multifractal Dimension ($D_2$):** Computes the Inverse Participation Ratio (IPR) to extract the generalized fractal dimension $D_2 = 0.2433 \pm 0.0006$, proving that the quantum states percolate through a sparse, highly constrained topological support rather than filling the Hilbert space uniformly.
+* **Quantum Backscattering Anomaly ($\eta$):** Quantifies the exact anomalous diffusion enhancement ($\eta = 0.3715$) induced by the $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve.
+* **NEE Phase Verification:** Statistically confirms that the Hamiltonian structurally inhabits a stable Non-Ergodic Extended (NEE) phase, strictly bridging the gap between random matrix theory and holographic defect geometries.
+
+### 3. Advanced Validation & Statistical Mechanics
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Complementary_Experiments.ipynb)
+
+This notebook contains the advanced statistical physics proofs defending the thermodynamic robustness of the Hamiltonian against finite-size artifacts. It executes three crucial experiments:
+* **Fourier Analysis of Empirical Zeros:** Uncovers the hidden $4\pi \approx 12.57$ modulation in the Riemann spectrum, proving that the $\mathbb{Z}/6\mathbb{Z}$ mask induces a multifractal resonance rather than a trivial period-6 sine wave.
+* **Chiral Symmetry Breaking (Theorem III.2):** Visually demonstrates how the Lambert $W$ diagonal potential destroys the AIII bipartite mirror symmetry of the arithmetic mask, firmly pushing the system into the GUE (Class A) universality class.
+* **Finite-Size Scaling (FSS) Collapse (Theorem V.2):** Computes the Spectral Form Factor (SFF) across multiple matrix sizes ($N=1000, 2000, 4000$) to extract the anomalous backscattering exponent ($\eta$) and prove the strict thermodynamic invariance of the Non-Ergodic Extended (NEE) phase.
 
 ### Local Installation
 
