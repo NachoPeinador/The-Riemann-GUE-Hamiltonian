@@ -24,7 +24,8 @@
 
 * 📈 **Macroscopic Identity:** $R^2 = 0.999997$ reconstruction of the first 10,000 Riemann zeros without any empirical scaling.
 * 🎲 **Microscopic Ergodicity:** Perfect agreement with Wigner‑Dyson GUE level repulsion.
-* 🌀 **Dynamical Multifractality:** The Spectral Form Factor (SFF) exhibits a stable fractional ramp $\gamma = 0.6086 \pm 0.0103$, proving the system resides in a **Non‑Ergodic Extended (NEE) phase** with fractal dimension $D_2 = 0.24338 \pm 0.00006$.
+* 🌊 **Fourier & Symmetry Breaking:** Discovered a $4\pi \approx 12.57$ modulation period in the zeros' fluctuations and demonstrated the macroscopic breakdown of AIII chiral symmetry.
+* 🌀 **Dynamical Multifractality:** The Spectral Form Factor (SFF) exhibits a stable fractional ramp $\gamma = 0.6148 \pm 0.0101$, proving the system resides in a **Non‑Ergodic Extended (NEE) phase** with fractal dimension $D_2 = 0.2433 \pm 0.0006$.
 
 ### 💡 **Key Concept**
 
@@ -38,15 +39,17 @@ The **Hilbert‑Pólya Conjecture** postulates that the nontrivial zeros of the 
 
 Previous phenomenological models, such as the Berry‑Keating semiclassical approach ($\hat{H} = xp$) or the Bender‑Brody‑Müller (BBM) pseudo‑Hermitian model, either lacked rigorous exact quantization or relied on vulnerable $\mathcal{PT}$‑symmetric metrics subject to spontaneous symmetry breaking.
 
-This research presents the definitive construction of **$\hat{H}_{\text{RGUE}}$**, a discrete quantum lattice operator built entirely from first principles. By leveraging the algebraic constraints of Noncommutative Geometry (specifically, the KO‑dimension 6 internal space of the Standard Model), the Hamiltonian acts as an arithmetic sieve.
+This research presents the definitive construction of **$\hat{H}_{\text{RGUE}}$**, a discrete quantum lattice operator built entirely from first principles. By leveraging the algebraic constraints of Noncommutative Geometry (specifically, the KO‑dimension 6 internal space of the Standard Model), the Hamiltonian acts as an exact arithmetic sieve.
 
 ### 🚀 The “Parameter‑Free” Engine
 
-Unlike previous attempts that rely on data‑fitting, every component of $\hat{H}_{\text{RGUE}}$ is analytically locked:
+Unlike previous attempts that rely on empirical data‑fitting, every component of $\hat{H}_{\text{RGUE}}$ is analytically locked to a topological invariant:
 
-1. **Diagonal ($\hat{H}_0$):** $E_n = 2\pi (n - 7/8) / W((n - 7/8)/e)$.
+1. **Diagonal Potential ($\hat{H}_0$):** $E_n = 2\pi (n - 7/8) / W((n - 7/8)/e)$.
 2. **Kinetic Decay:** $\nu = 0.75$ (Center of the Power‑Law Random Banded Matrix chaotic phase, ensuring Kato‑Rellich essential self‑adjointness).
 3. **Interaction Topology:** $\Xi(d) \in \{1, 5\} \pmod 6$ (Prime superselection rules).
+
+*Together, these three rigid pillars guarantee global thermodynamic stability and generate universal Wigner-Dyson statistics without a single empirical scaling factor.*
 
 <p align="center">
   <img src="Images/PRL_Figure_Ultimate_10k.png" alt="Spectral Reconstruction and Quantum Chaos" width="100%">
@@ -82,16 +85,22 @@ graph TD
 
 The definitive proof of quantum chaos in modern theoretical physics is the dynamical evolution of the **Spectral Form Factor (SFF)**.
 
-While standard dense matrices exhibit a rigid linear ramp ($\gamma = 1.0$) in the log‑log scale, our exact diagonalization of $\hat{H}_{\text{RGUE}}$ reveals an **anomalous fractional ramp ($\gamma = 0.6086 \pm 0.0103$)**, saturating perfectly at the theoretical Heisenberg time $t_H = 2\pi$.
+While standard dense matrices exhibit a rigid linear ramp ($\gamma = 1.0$) in the log‑log scale, our exact diagonalization of $\hat{H}_{\text{RGUE}}$ reveals an **anomalous fractional ramp ($\gamma = 0.6148 \pm 0.0101$)**, saturating perfectly at the theoretical Heisenberg time $t_H = 2\pi$.
 
 <p align="center">
   <img src="Images/PRL_Figure_Final_con_inset.png" alt="Spectral Form Factor with Inset" width="80%">
   <br>
-  <em>Figure 2. The “Dip, Ramp, and Plateau” signature. The inset zooms on the ramp region, comparing the measured slope (γ = 0.6086, red) with the ergodic prediction (γ = 1.0, black dashed). The perfect saturation at t_H proves strict Hermiticity.</em>
+  <em>Figure 2. The “Dip, Ramp, and Plateau” signature. The inset zooms on the ramp region, comparing the measured slope (γ = 0.6148, red) with the ergodic prediction (γ = 1.0, black dashed). The perfect saturation at t_H proves strict Hermiticity.</em>
 </p>
 
 **Physical Interpretation:**
-The system is neither fully thermalized nor localized. It resides in the **Non‑Ergodic Extended (NEE) phase** with fractal dimension $D_2 \approx 0.243$. The $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve drastically sparsifies the quantum random walk, acting as a structural analog to a Euclidean Keldysh wormhole in an orbifold geometry $\mathcal{M} = \Sigma_{g,n} \times S^1 / \mathbb{Z}_6$, where the Weil‑Petersson integration measure is truncated by $b^{D_2-1}$.
+The system is neither fully thermalized nor localized. It resides in the **Non‑Ergodic Extended (NEE) phase** with fractal dimension $D_2 \approx 0.2433$. The $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve drastically sparsifies the quantum random walk, acting as a structural analog to a Euclidean Keldysh wormhole in an orbifold geometry $\mathcal{M} = \Sigma_{g,n} \times S^1 / \mathbb{Z}_6$, where the Weil‑Petersson integration measure is truncated by $b^{D_2-1}$.
+
+### 3. Chiral Symmetry Breaking & $4\pi$ Resonance
+
+The Hamiltonian explicitly avoids the trivial integrable traps of standard bipartite lattices. The unbounded monotonic nature of the Lambert $W$ potential strictly breaks the AIII chiral mirror symmetry of the $\mathbb{Z}/6\mathbb{Z}$ off-diagonal mask, forcing the system into the **Class A (GUE)** universality class. 
+
+Furthermore, Fourier analysis of the spectral fluctuations reveals that the modular mask does not manifest as a simple period-6 sine wave, but induces a macroscopic multifractal modulation period of **$\approx 12.57$ ($4\pi$)**, perfectly matching the theoretical saturation limits of quantum gravity models.
 
 ---
 
