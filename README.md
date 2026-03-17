@@ -160,34 +160,6 @@ This notebook contains the advanced statistical physics proofs defending the the
 * **Chiral Symmetry Breaking (Theorem III.2):** Visually demonstrates how the Lambert $W$ diagonal potential destroys the AIII bipartite mirror symmetry of the arithmetic mask, firmly pushing the system into the GUE (Class A) universality class.
 * **Finite-Size Scaling (FSS) Collapse (Theorem V.2):** Computes the Spectral Form Factor (SFF) across multiple matrix sizes ($N=1000, 2000, 4000$) to extract the anomalous backscattering exponent ($\eta$) and prove the strict thermodynamic invariance of the Non-Ergodic Extended (NEE) phase.
 
-### Local Installation
-
-<details>
-<summary><strong>👇 Click to view Local Installation instructions</strong></summary>
-
-**1. Clone the Repository**
-
-```bash
-git clone https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum.git
-cd Z6Z-Riemann-Spectrum
-```
-
-**2. Install Dependencies**
-
-```bash
-pip install numpy scipy pandas matplotlib scikit-learn jupyter
-```
-
-**3. Run the Suite**
-
-```bash
-jupyter notebook Notebooks/Riemann_GUE_Hamiltonian.ipynb
-```
-
-*Note on memory:* Generating and diagonalizing a $20,000 \times 20,000$ dense complex matrix requires a machine with at least 16 GB of RAM. The script automatically uses `np.complex64` and `overwrite_a=True` to minimize the memory footprint.
-
-</details>
-
 ---
 
 ## ⚖️ Licensing
@@ -231,24 +203,22 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
 
 ```text
 .
-├── 📂 Papers/                           # Academic & Theoretical Documentation
-│   ├── 📄 Z6Z_EHH_paper.pdf              # The Submitted Manuscript
-│   └── 📝 Z6Z_EHH_paper.tex              # LaTeX source code
+├── 📂 Papers/                             # Academic & Theoretical Documentation
+│   ├── 📄 Z6Z_EHH_paper.pdf                # The Submitted Manuscript
+│   └── 📝 Z6Z_EHH_paper.tex                # LaTeX source code
 │
-├── 📂 Notebooks/                         # Computational Lab
-│   ├── 📓 Riemann_GUE_Hamiltonian.ipynb   # The Physics Engine:
-│   │   ├── Phase I: Topo‑Inversion (Lambert W)
-│   │   ├── Phase II: Arithmetic Sieve generation
-│   │   ├── Phase III: Exact Diagonalization
-│   │   ├── Phase IV: Macroscopic & Microscopic Metrics
-│   │   ├── Phase V: Spectral Form Factor (SFF) Analysis
-│   │   └── Phase VI: Ensemble Average & NEE Validation
-│   │
-│   └── 💾 zetazeros.txt                   # LMFDB Dataset (First 100k zeros)
+├── 📂 Notebooks/                          # Computational Lab
+│   ├── 📓 1_Riemann_GUE_Hamiltonian.ipynb    # Core Physics Engine & Exact Diag.
+│   ├── 📓 2_Z6Z_SFF_FRACTAL.ipynb            # Ensemble SFF & D2 Dimension
+│   ├── 📓 3_Complementary_Experiments.ipynb  # Fourier, Chiral Symmetry & FSS
+│   └── 💾 zetazeros.txt                     # LMFDB Dataset (First 100k zeros)
 │
 ├── 📂 Images/                             # High‑Resolution Visualizations
-│   ├── 📊 PRL_Figure_Ultimate_10k.png     # Reconstruction and Wigner‑Dyson
-│   └── 📉 PRL_Figure_Final_con_inset.png  # The Multifractal SFF Signature with Inset
+│   ├── 📊 PRL_Figure_Ultimate_10k.png       # Reconstruction and Wigner‑Dyson
+│   ├── 📉 PRL_Figure_Final_con_inset.png    # Multifractal SFF Signature
+│   ├── 📈 Fourier_Z6Z_Analysis.png          # 4π Resonance Discovery
+│   ├── 🔮 Chiral_Symmetry_Breaking.png      # AIII to Class A Transition
+│   └── 📐 Finite_Size_Scaling_Complete.png   # Thermodynamic FSS Collapse
 │
 └── 📜 LICENSE                             # MIT License
 ```
