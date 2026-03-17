@@ -164,7 +164,15 @@ This notebook contains the advanced statistical physics proofs defending the the
 
 ## ⚖️ Licensing
 
-This repository (code and documentation) is released under the **MIT License**, encouraging full academic replication, modification, and integration into subsequent theoretical physics or number theory research.
+This repository operates under a **Dual License** model to protect the non-commercial nature of the research while encouraging open academic collaboration:
+
+1. **Code & Software (`Notebooks/` and scripts):**
+   Released under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0). 
+   *You are free to use, modify, and share the code for academic, personal, or educational purposes. Any commercial use, monetization, or integration into proprietary paid software is strictly prohibited.*
+
+2. **Manuscripts & Visual Assets (`Papers/` and `Images/`):**
+   Released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+   *You are free to share and adapt the theoretical text and graphics for non-commercial purposes, provided you give appropriate credit and distribute your contributions under the exact same license.*
 
 ---
 
