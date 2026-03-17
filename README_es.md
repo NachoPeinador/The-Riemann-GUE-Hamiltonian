@@ -114,13 +114,42 @@ El laboratorio computacional contenido en este repositorio ejecuta la diagonaliz
 
 ## 🚀 Reproducibilidad y Laboratorio Computacional
 
-Para garantizar la transparencia y la robustez, todo el motor físico es de código abierto.
+Para garantizar la transparencia y robustez, todo el motor físico es de código abierto.
 
 ### Ejecución en la Nube (Recomendado)
 
-Puedes regenerar el Hamiltoniano, diagonalizarlo y extraer tanto las métricas de $R^2$ como el Factor de Forma Espectral dinámicamente en tu navegador. Haz clic en la medalla de abajo para abrir el experimento en Google Colab (tiempo de ejecución estimado para $N=20,000$ es de \~45 minutos en una GPU estándar de la nube).
+Puedes regenerar el Hamiltoniano, evaluar los ensambles termodinámicos y extraer las métricas espectrales dinámicamente en tu navegador. Haz clic en las medallas a continuación para abrir los experimentos respectivos en Google Colab. 
 
-[](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
+*(Nota: El Cuaderno 1 ejecuta álgebra de matrices densas que requiere un entorno de CPU con alta RAM estándar, mientras que los Cuadernos 2 y 3 utilizan CuPy y requieren un acelerador GPU T4).*
+
+### 1. El Motor Físico: Diagonalización Exacta y Caos Cuántico
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
+
+Este cuaderno actúa como el laboratorio computacional central. Lleva al límite los entornos estándar de la nube al realizar una diagonalización exacta densa y directa del operador $\hat{H}_{\text{RGUE}}$ de $20,000 \times 20,000$. Ejecuta las validaciones físicas principales:
+* **El Operador Libre de Parámetros:** Implementa el potencial diagonal determinista de Lambert $W$ (con la fase de Maslov de $7/8$) y filtra el ruido GUE exclusivamente a través de la criba aritmética $\mathbb{Z}/6\mathbb{Z}$.
+* **Identidad Topológica Macroscópica:** Logra una reconstrucción espectral autónoma con $R^2 = 0.999997$ de los primeros 10,000 ceros de Riemann, demostrando la eliminación completa de los errores de truncamiento asintótico.
+* **Universalidad Microscópica:** Extrae la distribución de espaciado de vecinos más cercanos desdoblada (\textit{unfolded}), confirmando la emergencia estricta de la repulsión de niveles de Wigner-Dyson (Caos de Clase A).
+* **Inicio de Ergodicidad Dinámica:** Calcula el Factor de Forma Espectral (SFF) en bruto para visualizar la firma canónica de "Bache, Rampa y Meseta" del caos cuántico y su saturación en el tiempo de Heisenberg.
+
+### 2. Ergodicidad Dinámica y Fase NEE Multifractal
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Z6Z_SFF_FRACTAL.ipynb)
+
+Este cuaderno aprovecha la aceleración por GPU (CuPy) para realizar un promedio de ensamble masivo de Monte Carlo Cuántico ($M=100$ realizaciones de matrices con $N=15,000$). Diagnostica la dinámica global de largo alcance y la geometría espacial del Hamiltoniano Riemann-GUE ejecutando las siguientes mediciones:
+* **SFF Promediado sobre Ensamble:** Purifica el Factor de Forma Espectral para eliminar el ruido mesoscópico, revelando la rampa fraccionaria subdifusiva altamente estable ($\gamma = 0.6148 \pm 0.0101$) que define el vacío aritmético.
+* **Dimensión Multifractal ($D_2$):** Calcula la Razón de Participación Inversa (IPR) para extraer la dimensión fractal generalizada $D_2 = 0.2433 \pm 0.0006$, demostrando que los estados cuánticos percolan a través de un soporte topológico disperso y altamente restringido en lugar de llenar el espacio de Hilbert uniformemente.
+* **Anomalía de Retrodispersión Cuántica ($\eta$):** Cuantifica el aumento exacto de la difusión anómala ($\eta = 0.3715$) inducido por la criba aritmética $\mathbb{Z}/6\mathbb{Z}$.
+* **Verificación de Fase NEE:** Confirma estadísticamente que el Hamiltoniano habita estructuralmente una fase No Ergódica Extendida (NEE) estable, cerrando estrictamente la brecha entre la teoría de matrices aleatorias y las geometrías de defectos holográficos.
+
+### 3. Validación Avanzada y Mecánica Estadística
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Complementary_Experiments.ipynb)
+
+Este cuaderno contiene las pruebas avanzadas de física estadística que defienden la robustez termodinámica del Hamiltoniano frente a los artefactos de tamaño finito. Ejecuta tres experimentos cruciales:
+* **Análisis de Fourier de Ceros Empíricos:** Descubre la modulación oculta de $4\pi \approx 12.57$ en el espectro de Riemann, demostrando que la máscara $\mathbb{Z}/6\mathbb{Z}$ induce una resonancia multifractal en lugar de una onda sinusoidal trivial de período 6.
+* **Rotura de Simetría Quiral (Teorema III.2):** Demuestra visualmente cómo el potencial diagonal de Lambert $W$ destruye la simetría de espejo bipartita AIII de la máscara aritmética, empujando firmemente al sistema hacia la clase de universalidad GUE (Clase A).
+* **Colapso de Escalamiento de Tamaño Finito (FSS) (Teorema V.2):** Calcula el Factor de Forma Espectral (SFF) a través de múltiples tamaños de matriz ($N=1000, 2000, 4000$) para extraer el exponente anómalo de retrodispersión ($\eta$) y demostrar la estricta invarianza termodinámica de la fase No Ergódica Extendida (NEE).
 
 ### Instalación Local
 
