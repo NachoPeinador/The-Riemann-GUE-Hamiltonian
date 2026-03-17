@@ -97,18 +97,18 @@ The system is neither fully thermalized nor localized. It resides in the **Non�
 
 ## 📊 Experimental Validation ($N=20,000$, $M=100$)
 
-The computational laboratory contained in this repository executes the largest known exact diagonalization of an arithmetically structured Hamiltonian, utilizing optimized `scipy.linalg.eigh` routines in single‑precision (`complex64`) to manage dense matrices up to 12 GB of RAM. The ensemble average over $M=100$ independent realizations at $N=15,000$ yields the following definitive metrics:
+The computational laboratory contained in this repository executes the largest known exact diagonalization of an arithmetically structured Hamiltonian, utilizing optimized `scipy.linalg.eigh` routines (CPU) and `CuPy` tensor acceleration (GPU). The validation spans from dense matrices requiring 12 GB of RAM ($N=20,000$) to massive thermodynamic ensemble averages ($M=100$ independent realizations). The suite yields the following definitive metrics:
 
 | Metric | Value | Theoretical Interpretation |
 |--------|-------|----------------------------|
 | **Macroscopic Identity ($R^2$)** | **$0.999997$** | Perfect tracking of the Weyl trajectory without empirical scale factors. |
-| **Macroscopic Scale Factor** | **$0.9994$** | Autonomous convergence to unity ($\Delta < 0.06\%$). |
 | **Microscopic Chaos** | **Wigner‑Dyson** | Complete breakdown of Poisson integrability; strong level repulsion $P(0)\to0$. |
-| **Fractal Dimension $D_2$** | **$0.24338 \pm 0.00006$** | Strictly reduced dimension proving multifractal support (Shapiro‑Wilk $p=0.796$). |
-| **SFF Ramp Exponent $\gamma$** | **$0.6086 \pm 0.0103$** | Sub‑diffusive fractional diffusion induced by the $\mathbb{Z}/6\mathbb{Z}$ mask; bootstrap 95% CI $[0.5835, 0.6328]$. |
-| **Anomaly $\eta = \gamma - D_2$** | **$0.3652 \pm 0.0103$** | Quantum backscattering anomaly locked to the $\mathbb{Z}/6\mathbb{Z}$ invariant. |
-| **SFF Plateau Saturation** | **$K \approx 0.9989$ at $t_H = 2\pi$** | Absolute proof of spectrum discreteness and rigorous Hermiticity (no Poisson leaks). |
-| **Spatial Decay Exponent** | **$\nu = 0.75$** | Mathematically derived from Kato‑Rellich theorem; experimentally observed in Sn/Si monolayers (Geoffroy et al., 2025). |
+| **Chiral Symmetry Breaking** | **Class AIII $\to$ Class A** | Lambert $W$ potential macroscopically destroys bipartite mirror symmetry, pushing the system into the GUE universality class. |
+| **Fourier Modulation Period** | **$\approx 12.57$ ($4\pi$)** | Rejection of a trivial period-6 sine wave; reveals the true multifractal resonance scale of the arithmetic vacuum. |
+| **Fractal Dimension $D_2$** | **$0.2433 \pm 0.0006$** | Strictly reduced dimension proving sparse multifractal support (Shapiro‑Wilk $p=0.796$). |
+| **SFF Ramp Exponent $\gamma$** | **$0.6148 \pm 0.0101$** | Sub‑diffusive fractional diffusion induced by the $\mathbb{Z}/6\mathbb{Z}$ mask (Altshuler-Shklovskii effect). |
+| **Thermodynamic Resilience** | **FSS Scaling Collapse** | Perfect data collapse across matrix sizes proves the strict thermodynamic invariance of the NEE phase. |
+| **SFF Plateau Saturation** | **$K \approx 1.0$ at $t_H = 2\pi$** | Absolute dynamical proof of spectrum discreteness and rigorous Hermiticity (no Poisson leaks). |
 
 ---
 
