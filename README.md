@@ -88,9 +88,9 @@ The definitive proof of quantum chaos in modern theoretical physics is the dynam
 While standard dense matrices exhibit a rigid linear ramp ($\gamma = 1.0$) in the log‑log scale, our exact diagonalization of $\hat{H}_{\text{RGUE}}$ reveals an **anomalous fractional ramp ($\gamma = 0.6148 \pm 0.0101$)**, saturating perfectly at the theoretical Heisenberg time $t_H = 2\pi$.
 
 <p align="center">
-  <img src="Images/PRL_Figure_Final_con_inset.png" alt="Spectral Form Factor with Inset" width="80%">
+  <img src="Images/PRL_Figure_Final_con_inset.png" alt="NEE Phase Thermodynamic Validation" width="90%">
   <br>
-  <em>Figure 2. The “Dip, Ramp, and Plateau” signature. The inset zooms on the ramp region, comparing the measured slope (γ = 0.6148, red) with the ergodic prediction (γ = 1.0, black dashed). The perfect saturation at t_H proves strict Hermiticity.</em>
+  <em><strong>Figure 2. Comprehensive Thermodynamic Validation of the NEE Phase (N=15,000, M=100).</strong> <b>(a)</b> The Spectral Form Factor exhibiting the "Dip, fractional Ramp, and Plateau" signature. The inset highlights the subdiffusive slope (γ = 0.6085 ± 0.0101, red solid line) drastically deviating from the ergodic GUE prediction (γ = 1.0, black dashed line). Perfect saturation at the Heisenberg time (t_H = 2π) rigorously proves strict Hermiticity. <b>(b-c)</b> Gaussian distribution and strict asymptotic convergence of the generalized fractal dimension (D₂ = 0.2433 ± 0.0006). <b>(d)</b> Validation summary confirming the quantum anomaly (η = 0.3653) and the multifractal support of the Riemann zeros.</em>
 </p>
 
 **Physical Interpretation:**
