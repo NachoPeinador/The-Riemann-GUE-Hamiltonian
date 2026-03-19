@@ -88,9 +88,9 @@ La prueba definitiva del caos cuántico en la física teórica moderna es la evo
 Mientras que las matrices densas estándar exhiben una rampa lineal rígida ($\gamma = 1.0$) en escala log‑log, nuestra diagonalización exacta de $\hat{H}_{\text{RGUE}}$ revela una **rampa fraccionaria anómala ($\gamma = 0.6148 \pm 0.0101$)**, que se satura perfectamente en el tiempo de Heisenberg teórico $t_H = 2\pi$.
 
 <p align="center">
-  <img src="Images/PRL_Figure_Final_con_inset.png" alt="Factor de Forma Espectral con Inset" width="80%">
+  <img src="Images/PRL_Figure_Final_con_inset.png" alt="Validación Termodinámica de la Fase NEE" width="90%">
   <br>
-  <em>Figura 2. La firma "Bache, Rampa y Meseta". El recuadro amplía la región de la rampa, comparando la pendiente medida (γ = 0.6148, rojo) con la predicción ergódica (γ = 1.0, negro discontinuo). La saturación perfecta en t_H demuestra una hermiticidad estricta.</em>
+  <em><strong>Figura 2. Validación termodinámica exhaustiva de la fase NEE (N=15.000, M=100).</strong> <b>(a)</b> El Factor de Forma Espectral (SFF) exhibiendo la firma de "Dip, Rampa fraccionaria y Meseta (Plateau)". El recuadro (inset) resalta la pendiente subdifusiva (γ = 0.6085 ± 0.0101, línea continua roja) desviándose drásticamente de la predicción ergódica GUE (γ = 1.0, línea discontinua negra). La saturación perfecta en el tiempo de Heisenberg (t_H = 2π) demuestra rigurosamente su estricta hermiticidad. <b>(b-c)</b> Distribución gaussiana y convergencia asintótica estricta de la dimensión fractal generalizada (D₂ = 0.2433 ± 0.0006). <b>(d)</b> Resumen de validación que confirma la anomalía cuántica (η = 0.3653) y el soporte multifractal de los ceros de Riemann.</em>
 </p>
 
 **Interpretación Física:**
