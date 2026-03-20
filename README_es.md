@@ -2,14 +2,14 @@
 
 ### Operador Hermítico Explícito para la Conjetura de Hilbert-Pólya mediante $\mathbb{Z}/6\mathbb{Z}$ y la Fase No Ergódica Extendida
 
-[](https://www.google.com/search?q=https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README.md)
-[](https://www.python.org/)
-[](https://doi.org/10.5281/zenodo.xxxxxxxx)
-[](https://orcid.org/0009-0008-1822-3452)
-[](https://twitter.com/todos_lumpen)
-[](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Papers/Z6Z_EHH_paper.pdf)
+[![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README_es.md)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
+[![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/es_Z6Z_Modular_Quantum_Chaos.pdf)
 
------
+---
 
 ## 🎯 Resumen Ejecutivo (TL;DR)
 
@@ -31,7 +31,7 @@
 
 > Los ceros de Riemann no son el espectro de una matriz aleatoria trivial; son las autofrecuencias de un **Vacío Cuántico Aritmético** gobernado por el efecto Altshuler‑Shklovskii y la localización multifractal, con un dual holográfico riguroso en forma de agujero de gusano de Keldysh truncado por una singularidad de orbifold.
 
------
+---
 
 ## 🔍 Descripción de la Investigación: Resolviendo el Enigma Espectral
 
@@ -133,7 +133,7 @@ Puedes regenerar el Hamiltoniano, evaluar los ensambles termodinámicos y extrae
 
 ### 1. El Motor Físico: Diagonalización Exacta y Caos Cuántico
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/The_Riemann_GUE_Hamiltonian.ipynb)
 
 Este cuaderno actúa como el laboratorio computacional central. Lleva al límite los entornos estándar de la nube al realizar una diagonalización exacta densa y directa del operador $\hat{H}_{\text{RGUE}}$ de $20,000 \times 20,000$. Ejecuta las validaciones físicas principales:
 * **El Operador Libre de Parámetros:** Implementa el potencial diagonal determinista de Lambert $W$ (con la fase de Maslov de $7/8$) y filtra el ruido GUE exclusivamente a través de la criba aritmética $\mathbb{Z}/6\mathbb{Z}$.
@@ -143,7 +143,7 @@ Este cuaderno actúa como el laboratorio computacional central. Lleva al límite
 
 ### 2. Ergodicidad Dinámica y Fase NEE Multifractal
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Z6Z_SFF_FRACTAL.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb)
 
 Este cuaderno aprovecha la aceleración por GPU (CuPy) para realizar un promedio de ensamble masivo de Monte Carlo Cuántico ($M=100$ realizaciones de matrices con $N=15,000$). Diagnostica la dinámica global de largo alcance y la geometría espacial del Hamiltoniano Riemann-GUE ejecutando las siguientes mediciones:
 * **SFF Promediado sobre Ensamble:** Purifica el Factor de Forma Espectral para eliminar el ruido mesoscópico, revelando la rampa fraccionaria subdifusiva altamente estable ($\gamma = 0.6148 \pm 0.0101$) que define el vacío aritmético.
