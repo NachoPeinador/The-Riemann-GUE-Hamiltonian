@@ -160,34 +160,6 @@ Este cuaderno contiene las pruebas avanzadas de física estadística que defiend
 * **Rotura de Simetría Quiral (Teorema III.2):** Demuestra visualmente cómo el potencial diagonal de Lambert $W$ destruye la simetría de espejo bipartita AIII de la máscara aritmética, empujando firmemente al sistema hacia la clase de universalidad GUE (Clase A).
 * **Colapso de Escalamiento de Tamaño Finito (FSS) (Teorema V.2):** Calcula el Factor de Forma Espectral (SFF) a través de múltiples tamaños de matriz ($N=1000, 2000, 4000$) para extraer el exponente anómalo de retrodispersión ($\eta$) y demostrar la estricta invarianza termodinámica de la fase No Ergódica Extendida (NEE).
 
-### Instalación Local
-
-\<details\>
-\<summary\>\<strong\>👇 Haz clic para ver las instrucciones de Instalación Local\</strong\>\</summary\>
-
-**1. Clonar el Repositorio**
-
-```bash
-git clone https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum.git
-cd Z6Z-Riemann-Spectrum
-```
-
-**2. Instalar Dependencias**
-
-```bash
-pip install numpy scipy pandas matplotlib scikit-learn jupyter
-```
-
-**3. Ejecutar la Suite**
-
-```bash
-jupyter notebook Notebooks/Riemann_GUE_Hamiltonian.ipynb
-```
-
-*Nota sobre la memoria:* Generar y diagonalizar una matriz compleja densa de $20,000 \times 20,000$ requiere una máquina con al menos 16 GB de RAM. El script utiliza automáticamente `np.complex64` y `overwrite_a=True` para minimizar el consumo de memoria.
-
-\</details\>
-
 ---
 
 ## ⚖️ Licencias
