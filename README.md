@@ -211,14 +211,14 @@ If this Hamiltonian construction, the analytical derivations ($\epsilon = \pi\sq
 
 ```text
 .
-├── 📂 Papers/                             # Academic & Theoretical Documentation
-│   ├── 📄 Z6Z_EHH_paper.pdf                # The Submitted Manuscript
-│   └── 📝 Z6Z_EHH_paper.tex                # LaTeX source code
+├── 📂 Papers/                                        # Academic & Theoretical Documentation
+│   ├── 📄 Z6Z_Modular_Quantum_Chaos.pdf                # The Submitted Manuscript
+│   └── 📝 Z6Z_Modular_Quantum_Chaos.tex                # LaTeX source code
 │
-├── 📂 Notebooks/                          # Computational Lab
-│   ├── 📓 1_Riemann_GUE_Hamiltonian.ipynb    # Core Physics Engine & Exact Diag.
-│   ├── 📓 2_Z6Z_SFF_FRACTAL.ipynb            # Ensemble SFF & D2 Dimension
-│   ├── 📓 3_Complementary_Experiments.ipynb  # Fourier, Chiral Symmetry & FSS
+├── 📂 Notebooks/                                                 # Computational Lab
+│   ├── 📓 The_Riemann_GUE_Hamiltonian.ipynb                         # Core Physics Engine & Exact Diag.
+│   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb       # Ensemble SFF & D2 Dimension
+│   ├── 📓 Complementary_Experiments.ipynb                           # Fourier, Chiral Symmetry & FSS
 │   └── 💾 zetazeros.txt                     # LMFDB Dataset (First 100k zeros)
 │
 ├── 📂 Images/                             # High‑Resolution Visualizations
