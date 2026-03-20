@@ -7,7 +7,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
 [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
-[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Papers/Z6Z_EHH_paper.pdf)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Papers/Z6Z_Modular_Quantum_Chaos.pdf)
 
 ---
 
@@ -133,7 +133,7 @@ You can regenerate the Hamiltonian, evaluate the thermodynamic ensembles, and ex
 
 ### 1. The Physics Engine: Exact Diagonalization & Quantum Chaos
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Riemann_GUE_Hamiltonian.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/The_Riemann_GUE_Hamiltonian.ipynb)
 
 This notebook acts as the core computational laboratory. It pushes standard cloud environments to their limits by performing a direct, dense exact diagonalization of the $20,000 \times 20,000$ $\hat{H}_{\text{RGUE}}$ operator. It executes the primary physical validations:
 * **The Parameter-Free Operator:** Implements the deterministic Lambert $W$ diagonal potential (with the $7/8$ Maslov phase) and filters GUE noise exclusively through the $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve.
@@ -143,7 +143,7 @@ This notebook acts as the core computational laboratory. It pushes standard clou
 
 ### 2. Dynamical Ergodicity & Multifractal NEE Phase
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Z6Z_SFF_FRACTAL.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb)
 
 This notebook leverages GPU acceleration (CuPy) to perform a massive Quantum Monte Carlo ensemble average ($M=100$ realizations of $N=15,000$ matrices). It diagnoses the global long-range dynamics and spatial geometry of the Riemann-GUE Hamiltonian by executing the following measurements:
 * **Ensemble-Averaged SFF:** Purifies the Spectral Form Factor to eliminate mesoscopic noise, unveiling the highly stable sub-diffusive fractional ramp ($\gamma = 0.6148 \pm 0.0101$) that defines the arithmetic vacuum.
