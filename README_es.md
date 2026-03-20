@@ -202,23 +202,23 @@ Si esta construcción del Hamiltoniano, las derivaciones analíticas ($\epsilon 
 
 \</details\>
 
------
+---
 
 ## 📁 Estructura del Repositorio
 
-\<details\>
-\<summary\>\<strong\>👇 Haz clic para ver la estructura del repositorio\</strong\>\</summary\>
+<details>
+<summary><strong>👇 Haz clic para ver la estructura del repositorio</strong></summary>
 
 ```text
-├── 📂 Papers/                             # Documentación Académica y Teórica
-│   ├── 📄 Z6Z_EHH_paper.pdf                # Manuscrito enviado para publicación
-│   └── 📝 Z6Z_EHH_paper.tex                # Código fuente en LaTeX
+├── 📂 Papers/                                          # Documentación Académica y Teórica
+│   ├── 📄 es_Z6Z_Modular_Quantum_Chaos.pdf               # Manuscrito enviado para publicación
+│   └── 📝 es_Z6Z_Modular_Quantum_Chaos.tex               # Código fuente en LaTeX
 │
-├── 📂 Notebooks/                          # Laboratorio Computacional
-│   ├── 📓 1_Riemann_GUE_Hamiltonian.ipynb    # Motor Físico Principal y Diag. Exacta
-│   ├── 📓 2_Z6Z_SFF_FRACTAL.ipynb            # Ensamble SFF y Dimensión D2
-│   ├── 📓 3_Complementary_Experiments.ipynb  # Fourier, Simetría Quiral y FSS
-│   └── 💾 zetazeros.txt                     # Conjunto de datos LMFDB (Primeros 100k ceros)
+├── 📂 Notebooks/                                                 # Laboratorio Computacional
+│   ├── 📓 The_Riemann_GUE_Hamiltonian.ipynb                        # Motor Físico Principal y Diag. Exacta
+│   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb      # Ensamble SFF y Dimensión D2
+│   ├── 📓 Complementary_Experiments.ipynb                          # Fourier, Simetría Quiral y FSS
+│   └── 💾 zetazeros.txt                                            # Conjunto de datos LMFDB (Primeros 100k ceros)
 │
 ├── 📂 Images/                             # Visualizaciones de Alta Resolución
 │   ├── 📊 PRL_Figure_Ultimate_10k.png       # Reconstrucción y Wigner‑Dyson
@@ -230,7 +230,7 @@ Si esta construcción del Hamiltoniano, las derivaciones analíticas ($\epsilon 
 └── 📜 LICENSE                             # Licencia Dual (PolyForm / CC BY-NC-SA)
 ```
 
-\</details\>
+</details>
 
 -----
 
