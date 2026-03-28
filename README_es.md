@@ -4,7 +4,7 @@
 
 [![Read in English](https://img.shields.io/badge/Lang-Read%20in%20English-blue?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxxxxx)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19284511.svg)](https://doi.org/10.5281/zenodo.19284511)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
 [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
 [![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/es_Z6Z_Modular_Quantum_Chaos.pdf)
@@ -191,14 +191,14 @@ Si esta construcción del Hamiltoniano, las derivaciones analíticas ($\epsilon 
   title = {Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z},
   year = {2026},
   publisher = {Zenodo},
-  doi = {10.5281/zenodo.xxxxxxx},
+  doi = {10.5281/zenodo.19284511},
   url = {https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum}
 }
 ```
 
 **APA:**
 
-> Peinador Sala, J. I. (2026). *Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z*. Zenodo. [https://doi.org/10.5281/zenodo.xxxxxxx](https://doi.org/10.5281/zenodo.xxxxxxx)
+> Peinador Sala, J. I. (2026). *Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z*. Zenodo. [https://doi.org/10.5281/zenodo.xxxxxxx](https://doi.org/10.5281/zenodo.19284511)
 
 \</details\>
 
