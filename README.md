@@ -251,6 +251,6 @@ This project was developed outside the traditional academic ecosystem. It serves
 
 <div align="center">
 
-<b>Last Update:</b> March 2026 | <b>Status:</b> Ready for Peer Review | Built with ⚛️ & 🐍
+<b>Last Update:<b> April 2026 | <b>Status:<b> Under Peer Review (ZNA - Ref: ZNA.2026.0134) | Built with ⚛️ & 🐍
 
 </div>
