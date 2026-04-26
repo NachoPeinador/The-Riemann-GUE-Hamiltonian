@@ -151,14 +151,17 @@ This notebook leverages GPU acceleration (CuPy) to perform a massive Quantum Mon
 * **Quantum Backscattering Anomaly ($\eta$):** Quantifies the exact anomalous diffusion enhancement ($\eta = 0.3715$) induced by the $\mathbb{Z}/6\mathbb{Z}$ arithmetic sieve.
 * **NEE Phase Verification:** Statistically confirms that the Hamiltonian structurally inhabits a stable Non-Ergodic Extended (NEE) phase, strictly bridging the gap between random matrix theory and holographic defect geometries.
 
-### 3. Advanced Validation & Statistical Mechanics
+### 3. ~~Advanced Validation & Statistical Mechanics~~ (Notebook retired)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Complementary_Experiments.ipynb)
-
-This notebook contains the advanced statistical physics proofs defending the thermodynamic robustness of the Hamiltonian against finite-size artifacts. It executes three crucial experiments:
-* **Fourier Analysis of Empirical Zeros:** Uncovers the hidden $4\pi \approx 12.57$ modulation in the Riemann spectrum, proving that the $\mathbb{Z}/6\mathbb{Z}$ mask induces a multifractal resonance rather than a trivial period-6 sine wave.
-* **Chiral Symmetry Breaking (Theorem III.2):** Visually demonstrates how the Lambert $W$ diagonal potential destroys the AIII bipartite mirror symmetry of the arithmetic mask, firmly pushing the system into the GUE (Class A) universality class.
-* **Finite-Size Scaling (FSS) Collapse (Theorem V.2):** Computes the Spectral Form Factor (SFF) across multiple matrix sizes ($N=1000, 2000, 4000$) to extract the anomalous backscattering exponent ($\eta$) and prove the strict thermodynamic invariance of the Non-Ergodic Extended (NEE) phase.
+> **Methodological review note (April 2026):**  
+> This notebook originally contained complementary experiments on spectral analysis (FFT), a visual demonstration of chiral symmetry breaking, and a finite‑size scaling analysis via curve collapse.  
+>  
+> Following a rigorous review of the robustness and necessity of each experiment, it has been decided to **retire this notebook from the public repository** for the following reasons:  
+> - The FFT analysis of the Riemann zeros did not provide statistically conclusive evidence.  
+> - Chiral symmetry breaking is an elementary algebraic consequence that does not require numerical validation.  
+> - The scaling analysis has been consolidated in **Notebooks 1 and 2**, where it is presented in a more robust form that is fully consistent with the *Bridge* paper.  
+>  
+> This decision reflects the author's commitment to transparency and scientific rigour. The remaining notebooks in this repository contain all the experimental support required for the associated manuscripts.
 
 ---
 
