@@ -151,14 +151,17 @@ Este cuaderno aprovecha la aceleración por GPU (CuPy) para realizar un promedio
 * **Anomalía de Retrodispersión Cuántica ($\eta$):** Cuantifica el aumento exacto de la difusión anómala ($\eta = 0.3715$) inducido por la criba aritmética $\mathbb{Z}/6\mathbb{Z}$.
 * **Verificación de Fase NEE:** Confirma estadísticamente que el Hamiltoniano habita estructuralmente una fase No Ergódica Extendida (NEE) estable, cerrando estrictamente la brecha entre la teoría de matrices aleatorias y las geometrías de defectos holográficos.
 
-### 3. Validación Avanzada y Mecánica Estadística
+### 3. ~~Advanced Validation & Statistical Mechanics~~ (Cuaderno retirado)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Complementary_Experiments.ipynb)
-
-Este cuaderno contiene las pruebas avanzadas de física estadística que defienden la robustez termodinámica del Hamiltoniano frente a los artefactos de tamaño finito. Ejecuta tres experimentos cruciales:
-* **Análisis de Fourier de Ceros Empíricos:** Descubre la modulación oculta de $4\pi \approx 12.57$ en el espectro de Riemann, demostrando que la máscara $\mathbb{Z}/6\mathbb{Z}$ induce una resonancia multifractal en lugar de una onda sinusoidal trivial de período 6.
-* **Rotura de Simetría Quiral (Teorema III.2):** Demuestra visualmente cómo el potencial diagonal de Lambert $W$ destruye la simetría de espejo bipartita AIII de la máscara aritmética, empujando firmemente al sistema hacia la clase de universalidad GUE (Clase A).
-* **Colapso de Escalamiento de Tamaño Finito (FSS) (Teorema V.2):** Calcula el Factor de Forma Espectral (SFF) a través de múltiples tamaños de matriz ($N=1000, 2000, 4000$) para extraer el exponente anómalo de retrodispersión ($\eta$) y demostrar la estricta invarianza termodinámica de la fase No Ergódica Extendida (NEE).
+> **Nota de revisión metodológica (Abril 2026):**  
+> Este cuaderno contenía experimentos complementarios de análisis espectral (FFT), demostración visual de ruptura de simetría quiral y un análisis de scaling por colapso de curvas.  
+>  
+> Tras una revisión rigurosa de la solidez y necesidad de cada experimento, se ha decidido **retirar este cuaderno del repositorio público** por las siguientes razones:  
+> - El análisis FFT de los ceros de Riemann no proporcionaba evidencia estadísticamente concluyente.  
+> - La ruptura de simetría quiral es una consecuencia algebraica elemental que no requiere validación numérica.  
+> - El análisis de scaling ha sido consolidado en los **Cuadernos 1 y 2**, donde se presenta de forma más robusta y coherente con el artículo.  
+>  
+> Esta decisión forma parte del compromiso del autor con la transparencia y el rigor científico. El resto de cuadernos mantenidos en este repositorio contienen todo el soporte experimental necesario para los manuscritos asociados.
 
 ---
 
