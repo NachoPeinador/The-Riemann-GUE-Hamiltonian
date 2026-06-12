@@ -87,34 +87,39 @@ For our $m=6$ mask, $\varphi(6)/6 = 1/3$. Further constraints arising from the b
 
 ## 📊 Experimental Validation
 
-This repository contains the complete computational laboratory used to validate the manuscript. It spans from dense matrices solved on CPU to massive thermodynamic ensemble averages ($M=100$) and single-shot exact diagonalizations using PyTorch on GPU ($N=16,000$).
+This repository contains the complete computational laboratory used to validate the manuscript. It spans from dense matrices solved on CPU to massive thermodynamic ensemble averages (M=100) and single-shot exact diagonalizations using PyTorch on GPU (N=16,000).
 
 | Metric / Experiment | Result | Physical Implication |
 | --- | --- | --- |
-| **Macroscopic Identity ($R^2$)** | **$1.0000$** | Perfect tracking of the Weyl trajectory. |
+| **Macroscopic Identity ($R^2$)** | **1.0000** | Perfect tracking of the Weyl trajectory. |
 | **Level Repulsion $\langle r \rangle$** | **$\approx 0.599$** | Strong GUE chaos; strict rejection of Poisson integrability. |
 | **Topological Protection** | **$\langle r \rangle > 0.53$ at $\nu=1.2$** | The arithmetic mask shields the system against Anderson localization. |
 | **SFF Ramp Exponent $\gamma$** | **$\approx 0.609$** | Strongly sub-diffusive dynamics defining the NEE phase. |
-| **GPU Fractal Dimension $D_2$** | **$0.2468$ (median $0.2505$)** | Microscopic confirmation that wavefunctions are confined to a sparse fractal support. |
+| **GPU Fractal Dimension $D_2$** | **0.2468 (median 0.2505)** | Microscopic confirmation that wavefunctions are confined to a sparse fractal support. |
 | **Real Zeros SFF (Negative Control)** | **$\gamma \approx 1.12$** | Real Riemann zeros are ergodic. The sub-diffusion is an intrinsic property of the modular mask. |
 
 ---
 
 ## 🚀 Reproducibility: The Open Computational Lab
 
-To guarantee absolute transparency, the entire validation suite is consolidated into a single, highly optimized Jupyter Notebook. You can execute all experiments, generate the paper's figures, and verify the statistical claims directly in your browser.
+To guarantee absolute transparency, the validation suite is divided into two highly optimized Jupyter Notebooks. You can execute all experiments, generate the paper's figures, and verify the statistical claims directly in your browser.
 
-**Notebook Contents:**
+### 1. General Validation & Scaling
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Experimental_Validation_Complete.ipynb)
+* **The Negative Control:** Forensic audit and SFF computation of 10,000 real Riemann zeros (LMFDB database).
+* **Macroscopic Validation:** Building $\hat{H}$, level spacing statistics $\langle r \rangle$, and $R^2$ correlations.
+* **Channel-Density Scaling:** Comparative analysis of $D_2$ across different modular masks (m=2, 6, 30).
+* **Finite-Size Scaling (FSS):** Evaluation of $D_2$ and $\langle r \rangle$ across varying matrix sizes to rule out ergodic crossovers.
+* **Robustness of Chaos:** Sweeps over coupling $\varepsilon$ and decay $\nu$ (anti-Anderson protection).
+* **Massive GPU Multifractal Scan:** PyTorch-accelerated exact diagonalization at N=16,000 to map the microscopic $D_2$ distribution.
 
-1. **The Negative Control:** Forensic audit and SFF computation of 10,000 real Riemann zeros (LMFDB database).
-2. **Macroscopic Validation:** Building $\hat{H}$, level spacing statistics $\langle r \rangle$, and $R^2$ correlations.
-3. **Channel-Density Scaling:** Comparative analysis of $D_2$ across different modular masks ($m=2, 6, 30$).
-4. **Finite-Size Scaling (FSS):** Evaluation of $D_2$ and $\langle r \rangle$ across varying matrix sizes to rule out ergodic crossovers.
-5. **Robustness of Chaos:** Sweeps over coupling $\varepsilon$ and decay $\nu$ (anti-Anderson protection).
-6. **SFF Ensemble:** Extracting the sub-diffusive fractional ramp.
-7. **Massive GPU Multifractal Scan:** PyTorch-accelerated exact diagonalization at $N=16,000$ to map the microscopic $D_2$ distribution.
+### 2. Thermodynamic Ensemble & NEE Phase
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Dynamical_Ergodicity_%26_Multifractal_NEE_Phase.ipynb)
+* **GPU-Accelerated Ensemble:** Massive ensemble averaging (M=100 realizations at N=15,000) utilizing CuPy.
+* **SFF Fractional Ramp:** Extraction of the sub-diffusive exponent $\gamma$ with bootstrap confidence intervals.
+* **Fractal Dimension Statistics:** Rigorous verification of the macroscopic $D_2 \approx 0.243$ dimension and calculation of the quantum anomaly $\eta$.
 
-*(Note: Cells 1-8 run efficiently on standard CPU runtimes. Cell 9 requires a T4 GPU due to 15+ GB VRAM requirements for complex64 matrix diagonalization).*
+*(Note: Notebook 1 runs efficiently on standard CPU runtimes, except for its final cell which requires a GPU. Notebook 2 requires a T4 GPU to handle the massive memory footprint of the thermodynamic ensemble).*
 
 ---
 
@@ -163,7 +168,8 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 │   └── 📝 Multifractal_NEE_Phase_PRBM.tex             # LaTeX source code
 │
 ├── 📂 Notebooks/                                      # Computational Lab
-│   ├── 📓 Experimental_Validation_Complete.ipynb      # Unified Validation Suite (CPU & GPU)
+│   ├── 📓 Experimental_Validation_Complete.ipynb      # General Validation Suite & Scaling
+│   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb # GPU Thermodynamic Ensemble
 │   └── 💾 zetazeros.txt                               # LMFDB Dataset (First 10k zeros)
 │
 ├── 📂 Images/                                         # High‑Resolution Visualizations
@@ -173,6 +179,7 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 │   ├── 🛡️ Robustness_Epsilon_Nu.png                   # Anti-Anderson Protection
 │   ├── 🌊 SFF_Model.png                               # Sub-diffusive Fractional Ramp
 │   ├── 🔍 Real_Zeros_SFF.png                          # Ergodic Negative Control
+│   ├── 🎨 PRL_Figure_Final_con_inset.png              # Multi-panel NEE Phase Validation
 │   └── 🔮 Fractal_Dimension_D2.png                    # Massive GPU Microscopic Scan
 │
 └── 📜 LICENSE                                         # License (PolyForm / CC BY-NC-SA)
