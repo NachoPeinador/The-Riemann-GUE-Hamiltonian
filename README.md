@@ -200,4 +200,4 @@ This project was developed outside the traditional academic ecosystem. It serves
 
 ---
 
-Last Update: June 2026 | Status: Pre-submission / Ready for Peer Review | Built with ⚛️ & 🐍
+Last Update: June 2026 | Status: Submitted to SciPost Physics (ID: scipost_202606_00034v1) | Built with ⚛️ & 🐍
