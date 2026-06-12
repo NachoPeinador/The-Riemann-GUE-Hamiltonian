@@ -4,21 +4,19 @@ authors:
   - family-names: "Peinador Sala"
     given-names: "José Ignacio"
     orcid: "https://orcid.org/0009-0008-1822-3452"
-title: "Explicit Hermitian Hamiltonian for the Riemann Zeros: Arithmetic Quantum Chaos and Multifractality from Z/6Z"
+title: "Multifractal non-ergodic extended phase in power-law random banded matrices with modular arithmetic constraints"
 version: 1.0.0
-doi: 10.5281/zenodo.19284511
-date-released: 2026-03-27
+doi: 10.5281/zenodo.20664325
+date-released: 2026-06-12
 url: "https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum"
 repository-code: "https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum"
 keywords:
-  - riemann hypothesis
-  - riemann zeros
-  - quantum chaos
-  - random matrix theory
-  - multifractality
-  - hermitian hamiltonian
-  - Z/6Z superselection
-  - hilbert-polya conjecture
+  - Non-ergodic extended phase.
+  - Power-law random banded matrices.
+  - Arithmetic quantum chaos.
+  - Multifractality.
+  - Spectral form factor.
+  - Modular arithmetic constraints.
 license: "PolyForm Noncommercial 1.0.0"
 abstract: >-
   This repository provides the computational framework and exact diagonalization
