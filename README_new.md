@@ -47,7 +47,7 @@ The power of this model lies in the strict separation between what is *imposed* 
 2. **The Software:** The system avoids thermal divergence and Anderson localization, spontaneously settling into a **multifractal NEE phase** where wavefunctions percolate through a sparse, low-dimensional support ($D_2 < 1$). 
 
 <p align="center">
-  <img src="Images/Figure_Validation.png" alt="Spectral Reconstruction and Quantum Chaos" width="100%">
+  <img src="Images/PRL_Figure_Ultimate_10k.png" alt="Spectral Reconstruction and Quantum Chaos" width="100%">
   <br>
   <em>Figure 1. Macroscopic alignment with the Weyl law (Left/Center) and emergent microscopic Wigner-Dyson level repulsion (Right).</em>
 </p>
