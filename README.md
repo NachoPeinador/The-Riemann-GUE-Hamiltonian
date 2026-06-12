@@ -155,7 +155,7 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 
 **APA:**
 
-> Peinador Sala, J. I. (2026). *Multifractal non-ergodic extended phase in power-law random banded matrices with modular arithmetic constraints*. Zenodo. https://doi.org/10.5281/zenodo.19284511
+> Peinador Sala, J. I. (2026). *Multifractal non-ergodic extended phase in power-law random banded matrices with modular arithmetic constraints*. Zenodo. https://doi.org/10.5281/zenodo.20664325
 
 ---
 
