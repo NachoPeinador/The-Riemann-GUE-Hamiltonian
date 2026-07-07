@@ -4,10 +4,11 @@
 
 [![Read in Spanish](https://img.shields.io/badge/Lang-Leer%20en%20Español-red?style=flat&logoColor=white&color=B31B1B)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/README_es.md)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Lean 4](https://img.shields.io/badge/Lean_4-Certified-purple?style=flat)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/tree/main/Lean)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19284510.svg)](https://doi.org/10.5281/zenodo.19284510)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
 [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
-[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/Multifractal_NEE_Phase_PRBM.pdf)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/JSM_Multifractal_NEE_Phase_PRBM.pdf)
 
 ---
 
@@ -110,24 +111,31 @@ This repository contains the complete computational laboratory used to validate 
 
 ## 🚀 Reproducibility: The Open Computational Lab
 
-To guarantee absolute transparency, the validation suite is divided into two highly optimized Jupyter Notebooks. You can execute all experiments, generate the paper's figures, and verify the statistical claims directly in your browser.
+To guarantee absolute transparency, the validation suite is divided into three highly optimized Jupyter Notebooks. You can execute all experiments, certify the mathematical foundations, generate the paper's figures, and verify the statistical claims directly in your browser.
 
-### 1. General Validation & Scaling
+### 1. Formal Logical Verification (Lean 4)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb)
+* **Automated Environment Setup:** Silent deployment of `elan` (Lean version manager) and Mathlib hydration within the interactive cloud kernel.
+* **Critical Exponent Arithmetic:** Formal proof of the Kato-Rellich relative boundedness domain condition ($1 - 2\nu = -0.5$ for $\nu = 0.75$).
+* **Sparsity & Totient Bounds:** Kernel certification of the base block adjacency count (exactly 2 valid hopping channels per block of 6) and the absolute totient fractal ceiling ($\varphi(6)/6 = 1/3$).
+* **Bipartite Geometry:** Algebraic verification of the tighter quiral factorization limit ($D_2 \le 1/4$), anchoring the information-theoretic bottleneck.
+
+### 2. General Validation & Scaling (Python)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Experimental_Validation_Complete.ipynb)
 * **The Negative Control:** Forensic audit and SFF computation of 10,000 real Riemann zeros (LMFDB database).
 * **Macroscopic Validation:** Building $\hat{H}$, level spacing statistics $\langle r \rangle$, and $R^2$ correlations.
-* **Channel-Density Scaling:** Comparative analysis of $D_2$ across different modular masks (m=2, 6, 30).
+* **Channel-Density Scaling:** Comparative analysis of $D_2$ across different modular masks ($m=2, 6, 30$).
 * **Finite-Size Scaling (FSS):** Evaluation of $D_2$ and $\langle r \rangle$ across varying matrix sizes to rule out ergodic crossovers.
 * **Robustness of Chaos:** Sweeps over coupling $\varepsilon$ and decay $\nu$ (anti-Anderson protection).
-* **Massive GPU Multifractal Scan:** PyTorch-accelerated exact diagonalization at N=16,000 to map the microscopic $D_2$ distribution.
+* **Massive GPU Multifractal Scan:** PyTorch-accelerated exact diagonalization at $N=16,000$ to map the microscopic $D_2$ distribution.
 
-### 2. Thermodynamic Ensemble & NEE Phase
+### 3. Thermodynamic Ensemble & NEE Phase (Python)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Dynamical_Ergodicity_%26_Multifractal_NEE_Phase.ipynb)
-* **GPU-Accelerated Ensemble:** Massive ensemble averaging (M=100 realizations at N=15,000) utilizing CuPy.
+* **GPU-Accelerated Ensemble:** Massive ensemble averaging ($M=100$ realizations at $N=15,000$) utilizing CuPy.
 * **SFF Fractional Ramp:** Extraction of the sub-diffusive exponent $\gamma$ with bootstrap confidence intervals.
 * **Fractal Dimension Statistics:** Rigorous verification of the macroscopic $D_2 \approx 0.243$ dimension and calculation of the quantum anomaly $\eta$.
 
-*(Note: Notebook 1 runs efficiently on standard CPU runtimes, except for its final cell which requires a GPU. Notebook 2 requires a T4 GPU to handle the massive memory footprint of the thermodynamic ensemble).*
+*(Note: Notebook 1 runs efficiently on standard CPU runtimes but requires internet access to fetch precompiled Mathlib binaries. Notebook 2 runs on standard CPU, except for its final cell which benefits from a GPU. Notebook 3 strictly requires a T4 GPU backend to handle the massive memory footprint of the thermodynamic ensemble).*
 
 ---
 
@@ -170,27 +178,28 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 ## 📁 Repository Structure
 
 ```text
-.
+
 ├── 📂 Papers/                                         # Academic & Theoretical Documentation
-│   ├── 📄 Multifractal_NEE_Phase_PRBM.pdf             # The Submitted Manuscript
-│   └── 📝 Multifractal_NEE_Phase_PRBM.tex             # LaTeX source code
+│   ├── 📄 JSM_Multifractal_NEE_Phase_PRBM.pdf         # The Submitted Manuscript (JSTAT Format)
+│   └── 📝 JSM_Multifractal_NEE_Phase_PRBM.tex         # LaTeX production source code
 │
-├── 📂 Notebooks/                                      # Computational Lab
-│   ├── 📓 Experimental_Validation_Complete.ipynb      # General Validation Suite & Scaling
-│   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb # GPU Thermodynamic Ensemble
-│   └── 💾 zetazeros.txt                               # LMFDB Dataset (First 10k zeros)
+├── 📂 Notebooks/                                      # Computational Lab & Interactive Validations
+│   ├── 📓 Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb # Lean 4 Proof Verification Environment
+│   ├── 📓 Experimental_Validation_Complete.ipynb      # General Python Validation Suite & Scaling Swaps
+│   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb # GPU-Accelerated Thermodynamic Ensemble (CuPy)
+│   └── 💾 zetazeros.txt                               # LMFDB Dataset (First 10k real Riemann zeros)
 │
 ├── 📂 Images/                                         # High‑Resolution Visualizations
-│   ├── 📊 Figure_Validation.png                       # Macroscopic Reconstruction & Chaos
-│   ├── 📉 Channel_Density_Scaling.png                 # Mask vs. Fractal Dimension
-│   ├── 📈 Finite_Size_Scaling.png                     # Thermodynamic Stability
-│   ├── 🛡️ Robustness_Epsilon_Nu.png                   # Anti-Anderson Protection
-│   ├── 🌊 SFF_Model.png                               # Sub-diffusive Fractional Ramp
-│   ├── 🔍 Real_Zeros_SFF.png                          # Ergodic Negative Control
-│   ├── 🎨 PRL_Figure_Final_con_inset.png              # Multi-panel NEE Phase Validation
-│   └── 🔮 Fractal_Dimension_D2.png                    # Massive GPU Microscopic Scan
+│   ├── 📊 Figure_Validation.png                       # Macroscopic Weyl Tracking & Chaos Repulsion
+│   ├── 📉 Channel_Density_Scaling.png                 # Mask Modulus vs. Emergent Fractal Dimension
+│   ├── 📈 Finite_Size_Scaling.png                     # Asymptotic Thermodynamic Stability
+│   ├── 🛡️ Robustness_Epsilon_Nu.png                   # Chaos Plateau & Anti-Anderson Protection
+│   ├── 🌊 SFF_Model.png                               # Sub-diffusive SFF Fractional Ramp
+│   ├── 🔍 Real_Zeros_SFF.png                          # Ergodic Negative Control (Zeta Zeros)
+│   ├── 🎨 PRL_Figure_Final_con_inset.png              # Multi-panel NEE Phase Validation Plot
+│   └── 🔮 Fractal_Dimension_D2.png                    # Microscopic Individual Eigenstate Scan
 │
-└── 📜 LICENSE                                         # License (PolyForm / CC BY-NC-SA)
+└── 📜 LICENSE                                         # Dual Licensing (PolyForm / CC BY-NC-SA 4.0)
 
 ```
 
@@ -208,4 +217,4 @@ This project was developed outside the traditional academic ecosystem. It serves
 
 ---
 
-Last Update: June 2026 | Status: Submitted to SciPost Physics (ID: scipost_202606_00034v1) | Built with ⚛️ & 🐍
+Last Update: July 2026 | Status: Under Review at JSTAT (ID: JSTAT_008P_0726) | Built with ⚛️, 🐍 & ⊢
