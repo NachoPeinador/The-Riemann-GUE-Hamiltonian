@@ -181,8 +181,8 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 ```text
 
 ├── 📂 Papers/                                         # Academic & Theoretical Documentation
-│   ├── 📄 JSM_Multifractal_NEE_Phase_PRBM.pdf         # The Submitted Manuscript (JSTAT Format)
-│   └── 📝 JSM_Multifractal_NEE_Phase_PRBM.tex         # LaTeX production source code
+│   ├── 📄 MULTIFRACTAL_NEE_v2.pdf         # The Submitted Manuscript (JSTAT Format)
+│   └── 📝 MULTIFRACTAL_NEE_v2.tex         # LaTeX production source code
 │
 ├── 📂 Notebooks/                                      # Computational Lab & Interactive Validations
 │   ├── 📓 Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb # Lean 4 Proof Verification Environment
