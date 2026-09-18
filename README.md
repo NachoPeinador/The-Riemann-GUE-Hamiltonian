@@ -2,14 +2,14 @@
 
 ### Arithmetic Quantum Chaos, Modular Constraints via $\mathbb{Z}/6\mathbb{Z}$, and the Riemann-von Mangoldt Scaffold
 
-[![Logical Verification Lean 4](https://img.shields.io/badge/Lean_4-Certified-purple?style=flat)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb)
+[![Logical Verification Lean 4](https://img.shields.io/badge/Lean_4-Certified-purple?style=flat)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_in_Modular_PRBM.ipynb)
 [![General Validation](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Experimental_Validation_Complete.ipynb)
 [![NEE Phase](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Dynamical_Ergodicity_%26_Multifractal_NEE_Phase.ipynb)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19284510.svg)](https://doi.org/10.5281/zenodo.19284510)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0008--1822--3452-A6CE39?style=flat&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-1822-3452)
 [![X](https://img.shields.io/badge/X-%40todos__lumpen-000000?style=flat&logo=x&logoColor=white)](https://twitter.com/todos_lumpen)
-[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/MULTIFRACTAL_NEE_v2.pdf)
+[![Papers](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Paper/MULTIFRACTAL_NEE.pdf)
 
 ---
 
@@ -104,14 +104,17 @@ This repository contains the complete computational laboratory used to validate 
 
 ## 🚀 Reproducibility: The Open Computational Lab
 
-To guarantee absolute transparency, the validation suite is divided into three highly optimized Jupyter Notebooks. You can execute all experiments, certify the mathematical foundations, generate the paper's figures, and verify the statistical claims directly in your browser.
+### 🛡️ Kernel-Certified Formal Proofs (Lean 4)
 
-### 1. Formal Logical Verification (Lean 4)
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb)
-* **Automated Environment Setup:** Silent deployment of `elan` (Lean version manager) and Mathlib hydration within the interactive cloud kernel.
-* **Critical Exponent Arithmetic:** Formal proof of the Kato-Rellich relative boundedness domain condition ($1 - 2\nu = -0.5$ for $\nu = 0.75$).
-* **Sparsity & Totient Bounds:** Kernel certification of the base block adjacency count (exactly 2 valid hopping channels per block of 6) and the absolute totient fractal ceiling ($\varphi(6)/6 = 1/3$).
-* **Bipartite Geometry:** Algebraic verification of the tighter quiral factorization limit ($D_2 \le 1/4$), anchoring the information-theoretic bottleneck.
+The algebraic identities, topological selection rules, and operator domain limits governing the PRBM interaction graph are **100% certified by the Lean 4 kernel (v4.34.0)** with **zero `sorry` assertions and zero unproven axioms**.
+
+[![Logical Verification Lean 4](https://img.shields.io/badge/Lean_4-Kernel_Certified_100%25-purple?style=flat&logo=lean)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Formal_Verification_in_Modular_PRBM.ipynb)
+
+* **Topological Wheel Channel Structure (`wheel_channels_structure`):** Formally proves that $\gcd(d, 6) = 1 \implies d \bmod 6 \in \{1, 5\}$, certifying the $66.7\%$ topological suppression of hopping channels.
+* **Unit Cell Measure & Asymptotic Density (`prbm_unit_cell_measure` & `prbm_asymptotic_density`):** Certifies Lemma B.1, proving that exactly 2 channels survive per $m=6$ block and capping the asymptotic information density at $\varphi(6)/6 = 1/3$.
+* **Bipartite Quantum Interference Bound (`bipartite_interference_bound`):** Certifies that symmetric chiral equiprobability ($c_1 = c_5 = 1/2$) caps the factorized probability density at $c_1 \cdot c_5 = 1/4$ ($0.25$), bounding the fractal dimension $D_2$.
+* **NCG Chiral Phase Absorption (`ncg_chiral_phase_absorption`):** Proves that for every coprime distance $d$, there exists an internal element $k$ such that $(d \cdot k) \bmod 6 = 1$, certifying $\mu_6$ gauge phase absorption in the Hilbert space.
+* **Kato–Rellich Self-Adjointness Window (`prbm_kato_rellich_regime`):** Mechanically verifies that $\nu = 0.75 \implies (2\nu > 1) \land (\nu < 1)$, certifying operator essential self-adjointness while ruling out Anderson localization.
 
 ### 2. General Validation & Scaling (Python)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/Z6Z-Riemann-Spectrum/blob/main/Notebooks/Experimental_Validation_Complete.ipynb)
@@ -134,30 +137,31 @@ To guarantee absolute transparency, the validation suite is divided into three h
 
 ## ⚖️ Licensing
 
-This repository operates under a **Dual License** model:
+This repository operates under open-access dual licensing:
 
 1. **Code & Software (`Notebooks/` and scripts):**
-Released under the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0).
-*Free to use, modify, and share for academic, personal, or educational purposes. Commercial use or monetization is strictly prohibited.*
-2. **Manuscripts & Visual Assets (`Papers/` and `Images/`):**
-Released under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Released under the permissive **[MIT License](LICENSE)**. Free to use, modify, and distribute for any academic, personal, or commercial purpose.
+2. **Manuscripts, Data & Visual Assets (`Papers/` and `Images/`):**
+Released under the **[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
 
 ---
 
 ## 📝 Citation
 
-If this Hamiltonian construction, the analytical derivations, or the computational architecture assists in your research, please cite the corresponding preprint:
+If this Hamiltonian construction, the formal Lean 4 proof suite, or the computational architecture assists in your research, please cite:
 
 **BibTeX:**
 
 ```bibtex
-@misc{peinador2026multifractal,
-  author = {Peinador Sala, José Ignacio},
-  title = {Multifractal non-ergodic extended phase in power-law random banded matrices with modular arithmetic constraints},
-  year = {2026},
-  publisher = {Zenodo},
-  doi = {10.5281/zenodo.20664325},
-  url = {[https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum](https://github.com/NachoPeinador/Z6Z-Riemann-Spectrum)}
+@article{PeinadorSala2026_PRBM_Modular,
+  author    = {Peinador Sala, Jos{\'e} Ignacio},
+  title     = {Multifractal non-ergodic extended phase in power-law random 
+               banded matrices with modular arithmetic constraints},
+  journal   = {Physical Review B (Submitted)},
+  year      = {2026},
+  doi       = {10.5281/zenodo.19284510},
+  url       = {[https://doi.org/10.5281/zenodo.19284510](https://doi.org/10.5281/zenodo.19284510)},
+  note      = {APS Accession Code: BW15050. Formal verification certified via Lean 4 kernel}
 }
 
 ```
@@ -173,11 +177,11 @@ If this Hamiltonian construction, the analytical derivations, or the computation
 ```text
 
 ├── 📂 Papers/                                         # Academic & Theoretical Documentation
-│   ├── 📄 MULTIFRACTAL_NEE_v2.pdf         # The Submitted Manuscript (JSTAT Format)
-│   └── 📝 MULTIFRACTAL_NEE_v2.tex         # LaTeX production source code
+│   ├── 📄 MULTIFRACTAL_NEE.pdf         # The Submitted Manuscript (JSTAT Format)
+│   └── 📝 MULTIFRACTAL_NEE.tex         # LaTeX production source code
 │
 ├── 📂 Notebooks/                                      # Computational Lab & Interactive Validations
-│   ├── 📓 Formal_Verification_Arithmetic_Constraints_in_Modular_PRBM.ipynb # Lean 4 Proof Verification Environment
+│   ├── 📓 Formal_Verification_in_Modular_PRBM.ipynb   # Lean 4 Proof Verification Environment
 │   ├── 📓 Experimental_Validation_Complete.ipynb      # General Python Validation Suite & Scaling Swaps
 │   ├── 📓 Dynamical_Ergodicity_&_Multifractal_NEE_Phase.ipynb # GPU-Accelerated Thermodynamic Ensemble (CuPy)
 │   └── 💾 zetazeros.txt                               # LMFDB Dataset (First 10k real Riemann zeros)
