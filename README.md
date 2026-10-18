@@ -5,6 +5,9 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/Data-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Lean 4](https://img.shields.io/badge/Lean-4.34.1-purple.svg)](https://leanprover.github.io/)
 [![Python](https://img.shields.io/badge/Python-3.12-yellow.svg)](https://www.python.org/)
+[![Paper PDF](https://img.shields.io/badge/Paper-Read_PDF-B31B1B?style=flat&logo=latex&logoColor=white)](https://github.com/NachoPeinador/The-Riemann-GUE-Hamiltonian/blob/main/Paper/First-neighbor_connectivity.pdf)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/NachoPeinador/The-Riemann-GUE-Hamiltonian/blob/main/Notebooks/Rep_suite_First_neighbor_connectivity_NEE.ipynb)
+[![Lean 4 Verified](https://img.shields.io/badge/Lean_4-Certified_Proof-purple?style=flat&logo=lean&logoColor=white)](https://colab.research.google.com/github/NachoPeinador/The-Riemann-GUE-Hamiltonian/blob/main/Notebooks/Formal_L4_First_neighbor_connectivity.ipynb)
 
 **Author:** José Ignacio Peinador Sala ([ORCID: 0009-0008-1822-3452](https://orcid.org/0009-0008-1822-3452))  
 **Manuscript:** *First-neighbor connectivity governs the non-ergodic extended phase in power-law random banded matrices with sparse hopping constraints*  
@@ -26,26 +29,11 @@ Suppressing the $d=1$ channel induces a topological collapse into strong spatial
 ```
 .
 ├── PRBM_Modular_Lean/              # Lean 4 verification suite (13 modules)
-│   ├── WheelChannelStructure.lean
-│   ├── UnitCellMeasure.lean
-│   ├── ChiralPhaseAbsorption.lean
-│   ├── KatoRellichRegime.lean
-│   ├── LocalResonanceCoupling.lean
-│   ├── ChannelDensityContraction.lean
-│   ├── NonErgodicPhaseBound.lean
-│   ├── PolyphaseFilterZ6.lean
-│   ├── FirstNeighborPreservation.lean
-│   ├── DihedralQuantization.lean
-│   ├── BipartiteInterferenceBound.lean
-│   ├── ExpectedDegreeBound.lean
-│   ├── FractalDimensionUpperBound.lean
-│   └── lakefile.lean
-├── notebooks/
-│   ├── PRBM_Modular_GPU_Experiments.ipynb   # Main computational suite
-│   └── module17_bulk_data_M3.npz            # Bulk D2 data (M=3 seeds)
-├── figures/                        # All manuscript figures (PDF/PNG 300 DPI)
-├── data/                           # Numerical results (.npz files)
-├── MANIFEST_SHA256.txt             # Cryptographic checksum manifest
+├── Papers/
+├── Notebooks/
+│   ├── Rep_suite_First_neighbor_connectivity_NEE.ipynb       # Main computational suite
+│   └── Formal_L4_First_neighbor_connectivity.ipynb           # Lean 4 suite
+├── Images/                        # All manuscript figures (PDF/PNG 300 DPI)
 ├── LICENSE_CODE                    # MIT License (Lean 4, Python)
 ├── LICENSE_DATA                    # CC BY 4.0 (manuscript, figures, data)
 └── README.md
@@ -123,8 +111,9 @@ cd The-Riemann-GUE-Hamiltonian
 # 2. Install Python dependencies
 pip install -r requirements.txt
 
-# 3. Run the main computational notebook
-jupyter notebook notebooks/PRBM_Modular_GPU_Experiments.ipynb
+# 3. Run the main computational notebook & Lean 4 notebook
+jupyter notebook Notebooks/Rep_suite_First_neighbor_connectivity_NEE.ipynb
+jupyter notebook Notebooks/Formal_L4_First_neighbor_connectivity.ipynb 
 
 # 4. (Optional) Verify the Lean 4 suite
 cd PRBM_Modular_Lean
